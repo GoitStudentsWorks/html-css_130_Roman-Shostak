@@ -1,0 +1,12 @@
+.class {
+}
+
+@media (min-width: 768px) {
+  .class {
+  }
+}
+
+@media (min-width: 1440px) {
+  .class {
+  }
+}

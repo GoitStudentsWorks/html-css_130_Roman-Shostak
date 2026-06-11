@@ -1,11 +1,11 @@
 {
-  "name": "goit-team-project",
+  "name": "project-aurora07",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/goit-team-project/",
+    "build": "vite build --base=/project-aurora07/",
     "preview": "vite preview"
   },
   "devDependencies": {

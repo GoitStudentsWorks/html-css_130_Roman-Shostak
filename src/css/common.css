@@ -16,6 +16,7 @@ body {
   letter-spacing: 0.02em;
   color:;
   background-color:;
+  transition: background-color var(--anim);
 }
 
 main {
@@ -71,7 +72,7 @@ img {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .section {
     padding:;
   }
@@ -91,10 +92,15 @@ img {
 .button:focus {
 }
 
+.class:hover,
+.class:focus {
+}
+
 /* ------------ Utilities ------------ */
 
 .container {
-  max-width: 320px;
+  max-width: 375px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -105,9 +111,9 @@ img {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .container {
-    max-width: 1200px;
+    max-width: 1440px;
   }
 }
 
