@@ -1,12 +1,32 @@
-.class {
+.is-mission {
+  /* background-color: var(--color-japanese-laurel-light); */
+    background-color: rgb(94, 138, 77);
+}
+
+.mission-description-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  color: white;
+  margin-bottom: 32px;
+}
+
+.mission-description-item {
+  width: 343px;
 }
 
 @media (min-width: 768px) {
-  .class {
+  .mission-description-item {
+    width: 340px;
   }
 }
 
 @media (min-width: 1440px) {
-  .class {
-  }
+  .mission-description-list {
+      margin-bottom: 80px;
+    }  
+  .mission-description-item {
+      width: 644px;
+    }
+  
 }
