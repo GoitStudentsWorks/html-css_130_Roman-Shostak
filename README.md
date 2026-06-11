@@ -9,7 +9,7 @@
 | 👤 Ім'я               | 🎯 Роль         | 🐙 GitHub                                                  | 💬 Slack         |
 | :-------------------- | :-------------- | :--------------------------------------------------------- | :--------------- |
 | Roman Shostak         | 🧑‍💻 Team Lead    | [@Roman-Shostak](https://https://github.com/Roman-Shostak) | `@Roman S.`      |
-| Valerii Ovdiienko     | 🌀 Scrum Master | [@github-nickname](https://github.com/github-nickname)     | `@Валерій`       |
+| Valerii Ovdiienko     | 🌀 Scrum Master | [@ValeriiOvdiienko](https://github.com/ValeriiOvdiienko)   | `@Валерій`       |
 | Anna Kovalchuk        | 💻 Developer    | [@github-nickname](https://github.com/github-nickname)     | `@Anna`          |
 | Alina Demkova         | 💻 Developer    | [@github-nickname](https://github.com/github-nickname)     | `@Alina Demkova` |
 | Viktoria              | 💻 Developer    | [@github-nickname](https://github.com/github-nickname)     | `@@iwtod`        |
