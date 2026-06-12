@@ -6,14 +6,24 @@
   display: flex;
   gap: 24px;
   flex-direction: column;
-  /* flex-wrap: wrap; */
   margin-bottom: 32px;
 }
 
+.mission-image {
+  width: 100%;
+  max-width: 343px;
+}
+
 @media (min-width: 768px) {
+  .mission-description {
+    flex-direction: row;
+  }
   .mission-description-title,
   .mission-description-text {
     width: 340px;
+  }
+  .mission-image {
+    max-width: 704px;
   }
 }
 
@@ -25,5 +35,7 @@
   .mission-description-text {
       width: 644px;
     }
-  
+  .mission-image {
+    max-width: 1312px;
+  }
 }
