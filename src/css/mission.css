@@ -1,30 +1,28 @@
-.is-mission {
+.section.is-mission {
     background-color: var(--japanese-laurel-light);
 }
 
-.mission-description-list {
+.mission-description {
   display: flex;
   gap: 24px;
-  flex-wrap: wrap;
-  color: var(--white);
+  flex-direction: column;
+  /* flex-wrap: wrap; */
   margin-bottom: 32px;
 }
 
-.mission-description-item {
-  width: 343px;
-}
-
 @media (min-width: 768px) {
-  .mission-description-item {
+  .mission-description-title,
+  .mission-description-text {
     width: 340px;
   }
 }
 
 @media (min-width: 1440px) {
-  .mission-description-list {
+  .mission-description {
       margin-bottom: 80px;
     }  
-  .mission-description-item {
+  .mission-description-title,
+  .mission-description-text {
       width: 644px;
     }
   
