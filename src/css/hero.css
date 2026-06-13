@@ -1,4 +1,4 @@
-.class {
+/* .class {
 }
 
 @media (min-width: 768px) {
@@ -8,5 +8,95 @@
 
 @media (min-width: 1440px) {
   .class {
+  }
+} */
+---- стосовно флекса,
+то на всіх розширеннях блок контенту центрований,
+падінги по вертикалі однакові сподіваюсь я правильно зрозумів логіку,
+що їх не варто перевизначати зображення я замінив на три різні версії,
+мені не подобалось масштабування з одного,
+яке не відповідало макету ---- .section.is-hero {
+  display: flex;
+  align-items: center;
+  min-height: 630px;
+  background-color: var(--japanese-laurel-light);
+  background-image:
+    linear-gradient(
+      to top,
+      var(--opacity-neutral-darkest-50),
+      var(--opacity-neutral-darkest-50)
+    ),
+    url("/images/hero/hero-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media (min-resolution: 192dpi) {
+  .section.is-hero {
+    background-image: url("/images/hero/hero-bg@2x.jpg");
+  }
+}
+@media (min-width: 768px) {
+  .section.is-hero {
+    background-image:
+      linear-gradient(
+        to top,
+        var(--opacity-neutral-darkest-50),
+        var(--opacity-neutral-darkest-50)
+      ),
+      url("/images/hero/hero-bg-t.jpg");
+  }
+}
+@media (min-width: 768px) and (min-resolution: 192dpi) {
+  .section.is-hero {
+    background-image: url("/images/hero/hero-bg-t@2x.jpg");
+  }
+}
+@media (min-width: 1440px) {
+  .section.is-hero {
+    background-image:
+      linear-gradient(
+        to top,
+        var(--opacity-neutral-darkest-50),
+        var(--opacity-neutral-darkest-50)
+      ),
+      url("/images/hero/hero-bg-d.jpg");
+  }
+}
+@media (min-width: 1440px) and (min-resolution: 192dpi) {
+  .section.is-hero {
+    background-image: url("/images/hero/hero-bg-d@2x.jpg");
+  }
+}
+---- тут я нічого краще не зміг придумати,
+щоб спозиціонувати контент по макету,
+тому зауваження дуже вітаються максимальна ширина встановлена так,
+щоб фітити контент по макету,
+із урахуванням падінгів---- .container.is-hero {
+  max-width: 675px;
+  margin-left: 0;
+  margin-right: auto;
+}
+@media (min-width: 1440px) {
+  .container.is-hero {
+    max-width: 774px;
+  }
+}
+.text-size-xl.is-hero {
+  margin-bottom: 8px;
+}
+---- тут обмежувати кнопку довилось через макс-відс врапера,
+батьківський блок був все ще заширокий,
+через що її розтягувало ---- .a-wrapper-254-36 {
+  margin-top: 16px;
+}
+@media (min-width: 768px) {
+  .a-wrapper-254-36 {
+    max-width: 254px;
+  }
+}
+@media (min-width: 1440px) {
+  .a-wrapper-254-36 {
+    max-width: 199px;
   }
 }
