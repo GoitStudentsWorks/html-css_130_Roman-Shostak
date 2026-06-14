@@ -60,6 +60,7 @@ main {
 button {
   cursor: pointer;
   border: none;
+  text-align: center;
   background-color: var(--transparent);
 }
 
@@ -106,6 +107,7 @@ a.button,
 a.button-primary,
 a.button-secondar {
   display: block;
+  text-align: center;
 }
 
 /* ------------ Layout ------------ */
@@ -219,7 +221,7 @@ a.button-secondar {
 
 .button {
   width: 100%;
-  padding: 6px 12px;
+  padding: 8px 12px;
   border-radius: 6px;
   font-size: 16px;
   font-weight: 500;
@@ -253,7 +255,7 @@ a.button-secondar {
 
 .button-secondary {
   width: 100%;
-  padding: 6px 12px;
+  padding: 8px 12px;
   border-radius: 6px;
   font-size: 16px;
   font-weight: 500;
@@ -282,7 +284,7 @@ a.button-secondar {
 
 .button-primary {
   width: 100%;
-  padding: 6px 12px;
+  padding: 8px 12px;
   border-radius: 6px;
   font-size: 16px;
   font-weight: 500;
@@ -345,6 +347,11 @@ a.button-secondar {
   border: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+/* ------------ Logo styles ------------ */
+.logo {
+  fill: var(--white);
+  display: block;
 }
 
 .mobile-hide {
