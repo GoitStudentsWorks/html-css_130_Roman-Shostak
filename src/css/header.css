@@ -12,8 +12,6 @@
 } */
 header {
   background-color: var(--japanese-laurel-light);
-  position: fixed;
-  width: 100%;
 }
 .container.is-header {
   display: flex;
@@ -82,7 +80,7 @@ header {
   }
 }
 .burger-menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100vw;
   height: 100vh;
@@ -101,7 +99,7 @@ header {
     right: 0;
   }
   .burger-menu > .container {
-    min-width: 0;
+    min-width: auto;
   }
 }
 @media (min-width: 1440px) {
@@ -144,15 +142,13 @@ header {
     gap: 24px;
   }
 }
-/* Можна винести в common */
-.link {
+.text-medium-semibold.is-header {
   transition: opacity var(--anim);
 }
-.link:hover,
-.link:focus {
+.text-medium-semibold.is-header:hover,
+.text-medium-semibold.is-header:focus {
   opacity: 0.5;
 }
-.link:active {
+.text-medium-semibold.is-header:active {
   opacity: 0.6;
 }
-/* Можна винести в common */
