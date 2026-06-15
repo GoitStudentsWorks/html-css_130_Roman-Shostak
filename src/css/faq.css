@@ -1,12 +1,110 @@
-.class {
+.faq {
+  background-color: var(--japanese-laurel-light);
 }
 
-@media (min-width: 768px) {
-  .class {
+.container.is-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+/* Desktop styles */
+@media screen and (min-width: 1440px) {
+  .container.is-faq {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}
+/* FAQ accordion list */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* FAQ item */
+.faq-item:last-child {
+  border-bottom: 1px solid var(--opacity-white-20);
+}
+/* FAQ question button */
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 20px 0;
+
+  border-top: 1px solid var(--opacity-white-20);
+
+  color: var(--white);
+
+  transition: color var(--anim);
+}
+.faq-question:hover,
+.faq-question:focus-visible {
+  color: var(--opacity-white-50);
+}
+.faq-question:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 4px;
+}
+/* FAQ answer */
+.faq-answer {
+  height: 0;
+  overflow: hidden;
+  transition: height var(--anim);
+}
+.faq-answer > p {
+  padding-bottom: 24px;
+}
+.faq-item.active .faq-answer {
+  height: auto;
+}
+
+/* Tablet styles */
+/* Title column */
+@media screen and (min-width: 768px) {
+  .faq-title-wrapper {
+    width: 421px;
   }
 }
 
-@media (min-width: 1440px) {
-  .class {
+/* Desktop styles */
+/* Title column */
+@media screen and (min-width: 1440px) {
+  .faq-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.margin-bottom-8 {
+  margin-bottom: 8px;
+}
+
+.faq-arrow {
+  fill: currentColor;
+  transition: transform var(--anim);
+}
+.faq-item.active .faq-arrow {
+  transform: rotate(180deg);
+}
+
+/* Respect users who prefer reduced motion: keep a tiny height transition so
+   the JS transitionend cleanup still runs, but drop the perceptible motion. */
+@media (prefers-reduced-motion: reduce) {
+  .faq-answer {
+    transition-duration: 1ms;
+  }
+  .faq-arrow {
+    transition: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .width-a-362-362 {
+    width: 362px;
   }
 }
