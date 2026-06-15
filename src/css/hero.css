@@ -11,7 +11,6 @@
   display: flex;
   align-items: center;
   min-height: 100vh;
-  background-color: var(--japanese-laurel-light);
   background-image: var(--hero-overlay), url("/images/hero/hero-bg.jpg");
   background-size: cover;
   background-position: center;
