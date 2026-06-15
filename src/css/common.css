@@ -26,6 +26,8 @@
   --opacity-neutral-darkest-50: rgba(1, 4, 0, 0.5);
   --opacity-neutral-darkest-60: rgba(1, 4, 0, 0.6);
   --opacity-white-20: rgba(255, 255, 255, 0.2);
+  --opacity-white-50: rgba(255, 255, 255, 0.5);
+  --opacity-white-60: rgba(255, 255, 255, 0.6);
 
   /* System */
   --error-red: #a00000;
@@ -189,6 +191,7 @@ a.button-secondar {
 
 .text-medium-bold {
   font-weight: 700;
+  font-size: 18px;
 }
 
 .text-large-semibold {

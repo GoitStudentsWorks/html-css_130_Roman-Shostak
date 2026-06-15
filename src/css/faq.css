@@ -9,7 +9,7 @@
 }
 /* Desktop styles */
 @media screen and (min-width: 1440px) {
-  .container.is-faq{
+  .container.is-faq {
     flex-direction: row;
     align-items: flex-start;
     gap: 24px;
@@ -19,10 +19,8 @@
 .faq-list {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
-
-/* Desktop styles */
-/* Accordion column */
 
 /* FAQ item */
 .faq-item:last-child {
@@ -40,29 +38,35 @@
   border-top: 1px solid var(--opacity-white-20);
 
   color: var(--white);
-}
-.faq-question:focus {
-  outline: none;
-}
 
+  transition: color var(--anim);
+}
+.faq-question:hover,
+.faq-question:focus-visible {
+  color: var(--opacity-white-50);
+}
 .faq-question:focus-visible {
   outline: 2px solid var(--white);
   outline-offset: 4px;
 }
 /* FAQ answer */
 .faq-answer {
-  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: height var(--anim);
+}
+.faq-answer > p {
   padding-bottom: 24px;
 }
 .faq-item.active .faq-answer {
-  display: block;
+  height: auto;
 }
 
 /* Tablet styles */
 /* Title column */
 @media screen and (min-width: 768px) {
   .faq-title-wrapper {
-    max-width: 362px;
+    width: 421px;
   }
 }
 
@@ -70,9 +74,6 @@
 /* Title column */
 @media screen and (min-width: 1440px) {
   .faq-title-wrapper {
-    width: 362px;
-    flex-shrink: 0;
-
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -81,4 +82,29 @@
 
 .margin-bottom-8 {
   margin-bottom: 8px;
+}
+
+.faq-arrow {
+  fill: currentColor;
+  transition: transform var(--anim);
+}
+.faq-item.active .faq-arrow {
+  transform: rotate(180deg);
+}
+
+/* Respect users who prefer reduced motion: keep a tiny height transition so
+   the JS transitionend cleanup still runs, but drop the perceptible motion. */
+@media (prefers-reduced-motion: reduce) {
+  .faq-answer {
+    transition-duration: 1ms;
+  }
+  .faq-arrow {
+    transition: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .width-a-362-362 {
+    width: 362px;
+  }
 }
