@@ -1,3 +1,92 @@
-<section class="section">
-  <div class="container"></div>
+<section class="section is-contacts" id="contacts">
+  <div class="container is-contacts">
+    <div class="form-field">
+      <h3 class="text-size-tagline">Contacts</h3>
+      <h2 class="text-size-lg contacts-heading">Get in Touch</h2>
+      <p>We'd love to hear from you anytime!</p>
+      <ul class="contact-info-list">
+        <li>
+          <a class="contact-info" href="mailto:hello@organicstore.com">
+            <svg class="contact-icon" width="20" height="16">
+              <use href="/images/sprite.svg#email"></use>
+            </svg>
+            <p class="text-regular-normal is-underlined">
+              hello@organicstore.com
+            </p>
+          </a>
+        </li>
+        <li>
+          <a class="contact-info" href="tel:+15553291024">
+            <svg class="contact-icon" width="20" height="20">
+              <use href="/images/sprite.svg#phone"></use>
+            </svg>
+            <p class="text-regular-normal is-underlined">+1 (555) 329-1024</p>
+          </a>
+        </li>
+      </ul>
+      <form class="contact-form">
+        <label for="form-name" class="form-label">Name</label>
+        <div class="validation">
+          <input
+            class="form-input text-regular-normal"
+            type="text"
+            id="form-name"
+            name="name"
+            placeholder="Sarah"
+            pattern="^[a-zA-Z\s\.]{5,64}$"
+            autocomplete="off"
+            required
+          />
+          <p class="invalid-text">Error text</p>
+        </div>
+        <div class="validation">
+          <label for="form-email" class="form-label">Email</label>
+          <input
+            class="form-input text-regular-normal"
+            type="email"
+            id="form-email"
+            name="email"
+            placeholder="hello@organic.com"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            autocomplete="off"
+            required
+          />
+          <p class="invalid-text">Error text</p>
+        </div>
+
+        <label for="form-message" class="form-label">Message</label>
+        <textarea
+          class="form-textarea text-regular-normal"
+          name="message"
+          id="form-message"
+          placeholder="Text your message..."
+          maxlength="500"
+        ></textarea>
+        <div class="btn-wrapper">
+          <button class="button" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <picture>
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          /images/contacts/form-d.jpg    1x,
+          /images/contacts/form-d@2x.jpg 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /images/contacts/form-t.jpg    1x,
+          /images/contacts/form-t@2x.jpg 2x
+        "
+      />
+      <img
+        src="/images/contacts/form.jpg"
+        srcset="/images/contacts/form.jpg 1x, /images/contacts/form@2x.jpg 2x"
+        alt="Group of smiling people"
+      />
+    </picture>
+  </div>
 </section>

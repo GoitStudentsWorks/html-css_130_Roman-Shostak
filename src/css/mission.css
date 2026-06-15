@@ -1,7 +1,3 @@
-.section.is-mission {
-    background-color: var(--japanese-laurel-light);
-}
-
 .mission-description {
   display: flex;
   gap: 24px;
@@ -25,10 +21,10 @@
 
 @media (min-width: 1440px) {
   .mission-description {
-      margin-bottom: 80px;
-    }  
+    margin-bottom: 80px;
+  }
   .mission-description-title,
   .mission-description-text {
-      width: 644px;
-    }
+    width: 644px;
+  }
 }
