@@ -36,10 +36,10 @@ header {
 }
 .text-regular-normal.is-header:hover,
 .text-regular-normal.is-header:focus {
-  color: var(--opacity-neutral-darkest-50);
+  color: var(--opacity-white-50);
 }
 .text-regular-normal.is-header:active {
-  color: var(--opacity-neutral-darkest-60);
+  color: var(--opacity-white-60);
 }
 .a-wrapper-92-32.mobile-hide {
   min-width: 92px;
