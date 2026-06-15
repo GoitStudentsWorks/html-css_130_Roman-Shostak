@@ -6,6 +6,12 @@ header {
   width: 100%;
   z-index: 1000;
   border-bottom: 3px solid var(--transparent);
+  transition:
+    transform var(--anim),
+    border-color var(--anim);
+}
+.header.is-hidden {
+  transform: translateY(-100%);
 }
 .menu-overlay {
   position: fixed;
@@ -87,12 +93,24 @@ header {
 .burger-open-button,
 .burger-close-button {
   padding: 10px;
+  transition: opacity var(--anim);
 }
 .burger-close-button {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
+}
+.menu-open .burger-open-button {
+  opacity: 0;
+}
+.menu-open .burger-close-button {
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  body.menu-open header {
+    border-bottom-color: var(--opacity-neutral-darkest-15);
+  }
 }
 .burger-open,
 .burger-close {
@@ -105,6 +123,9 @@ header {
     width: 24px;
     height: 24px;
   }
+}
+body.menu-open {
+  overflow: hidden;
 }
 .burger-menu {
   position: absolute;
