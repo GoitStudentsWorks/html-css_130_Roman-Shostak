@@ -69,21 +69,27 @@
         </div>
       </form>
     </div>
-    <picture class="form-img">
-      <img
-        srcset="../images/form.jpg 1x, ../images/form@2x.jpg 2x"
-        alt="Group of people smiling"
-        width="343 "
-      />
-
-      <source
-        media="min-width: 768px"
-        srcset="../images/form-t.jpg 1x, ../images/form-t@2x.jpg 2x"
-      />
-
+    <picture>
       <source
         media="(min-width: 1440px)"
-        srcset="../images/form-d.jpg 1x, ../images/form-d@2x.jpg 2x"
+        srcset="
+          ../images/contacts/form-d.jpg    1x,
+          ../images/contacts/form-d@2x.jpg 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../images/contacts/form-t.jpg    1x,
+          ../images/contacts/form-t@2x.jpg 2x
+        "
+      />
+      <img
+        srcset="
+          ../images/contacts/form.jpg    1x,
+          ../images/contacts/form@2x.jpg 2x
+        "
+        alt="Group of smiling people"
       />
     </picture>
   </div>
