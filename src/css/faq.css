@@ -1,19 +1,18 @@
 .faq {
   background-color: var(--japanese-laurel-light);
-  color: var(--white);
 }
 
-.faq .container {
+.container.is-faq {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 /* Desktop styles */
 @media screen and (min-width: 1440px) {
-  .faq .container {
+  .container.is-faq{
     flex-direction: row;
     align-items: flex-start;
-    gap: 80px;
+    gap: 24px;
   }
 }
 /* FAQ accordion list */
@@ -24,11 +23,7 @@
 
 /* Desktop styles */
 /* Accordion column */
-@media screen and (min-width: 1440px) {
-  .faq-list {
-    width: 867px;
-  }
-}
+
 /* FAQ item */
 .faq-item:last-child {
   border-bottom: 1px solid var(--opacity-white-20);
@@ -84,13 +79,6 @@
   }
 }
 
-/* FAQ icon */
-.faq-question svg {
-  fill: currentColor;
-  flex-shrink: 0;
-  transition: transform 250ms ease;
-}
-
-.faq-item.active .faq-question svg {
-  transform: rotate(180deg);
+.margin-bottom-8 {
+  margin-bottom: 8px;
 }
