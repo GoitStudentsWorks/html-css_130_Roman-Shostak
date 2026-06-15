@@ -1,3 +1,7 @@
+.section.is-feedbacks {
+  background-color: var(--japanese-laurel-lightest);
+}
+
 .feedbacks__section-heading {
   text-align: center;
   margin-bottom: 16px;
@@ -44,7 +48,6 @@
 }
 
 @media (min-width: 768px) {
-
   .feedbacks__list-item {
     display: flex;
     flex-basis: calc((100% - 24px) / 2);
@@ -80,7 +83,6 @@
 .feedbacks__rating[data-rating="1"] .feedbacks__star-icon:nth-child(-n + 1) {
   fill: var(--neutral-darkest);
 } */
-
 
 .feedbacks__text {
   color: var(--neutral-darkest);
