@@ -35,26 +35,21 @@
     <div class="a-wrapper-92-32 mobile-hide">
       <a class="button is-header" href="#assortment">Order</a>
     </div>
-    <button type="button" class="burger-open-button link">
-      <svg class="burger-open" width="32" height="32">
-        <use href="../images/sprite.svg#burger-open"></use>
-      </svg>
-    </button>
+    <div class="burger-buttons" id="burger-toggle">
+      <button type="button" class="burger-open-button link">
+        <svg class="burger-open" width="32" height="32">
+          <use href="../images/sprite.svg#burger-open"></use>
+        </svg>
+      </button>
+      <button type="button" class="burger-close-button link">
+        <svg class="burger-close" width="32" height="32">
+          <use href="../images/sprite.svg#burger-close"></use>
+        </svg>
+      </button>
+    </div>
   </div>
   <div class="burger-menu">
     <div class="container">
-      <div class="burger-icon-wrapper">
-        <a class="hidden-logo" href="#">
-          <svg class="logo" width="142" height="60">
-            <use href="../images/sprite.svg#logo"></use>
-          </svg>
-        </a>
-        <a class="is-header" href="">
-          <svg class="icon is-white" width="32" height="32">
-            <use href="../images/sprite.svg#burger-close"></use>
-          </svg>
-        </a>
-      </div>
       <ul class="burger-nav">
         <li>
           <a class="text-medium-semibold is-header" href="#home">Home</a>
@@ -92,3 +87,4 @@
     </div>
   </div>
 </header>
+<div class="menu-overlay"></div>

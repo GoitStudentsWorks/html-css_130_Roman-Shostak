@@ -12,6 +12,23 @@
 } */
 header {
   background-color: var(--japanese-laurel-light);
+  z-index: 10;
+  border-bottom: 3px solid var(--transparent);
+}
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  background-color: var(--opacity-neutral-darkest-30);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity var(--anim),
+    visibility var(--anim);
+}
+.menu-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
 }
 .container.is-header {
   display: flex;
@@ -26,6 +43,8 @@ header {
 }
 .logo-wrapper {
   padding: 6px 0px;
+  position: relative;
+  z-index: 1000;
 }
 .navigation {
   margin-left: auto;
@@ -51,6 +70,8 @@ header {
 }
 .a-wrapper-92-32.mobile-hide {
   min-width: 92px;
+  position: relative;
+  z-index: 1000;
 }
 /* .button.is-header {
   display: none;
@@ -60,21 +81,34 @@ header {
     padding: 4px 24px;
   }
 }
-.burger-open-button {
-  padding: 10px;
+.burger-buttons {
+  position: relative;
+  z-index: 1000;
   margin-left: 16px;
 }
 @media (min-width: 1440px) {
-  .burger-open-button {
+  .burger-buttons {
     display: none;
   }
 }
-.burger-open {
+.burger-open-button,
+.burger-close-button {
+  padding: 10px;
+}
+.burger-close-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.burger-open,
+.burger-close {
   fill: var(--white);
   display: block;
 }
 @media (min-width: 768px) {
-  .burger-open {
+  .burger-open,
+  .burger-close {
     width: 24px;
     height: 24px;
   }
@@ -95,8 +129,9 @@ header {
 }
 @media (min-width: 768px) {
   .burger-menu {
-    width: 286px;
+    width: calc(286px + (100% - 768px) / 2);
     right: 0;
+    padding-right: calc((100% - 768px) / 2);
   }
   .burger-menu > .container {
     min-width: auto;
@@ -107,38 +142,18 @@ header {
     display: none;
   }
 }
-.burger-icon-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6px 16px;
-}
-@media (min-width: 768px) {
-  .burger-icon-wrapper {
-    justify-content: flex-end;
-    padding: 16px 0 0 0;
-  }
-}
-.icon.is-white {
-  fill: var(--white);
-}
-@media (min-width: 768px) {
-  .hidden-logo {
-    display: none;
-  }
-}
 .burger-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 64px;
+  padding-top: 136px;
   padding-bottom: 32px;
   gap: 32px;
 }
 @media (min-width: 768px) {
   .burger-nav {
     align-items: flex-end;
-    padding: 24px 0;
+    padding-top: 72px;
     gap: 24px;
   }
 }
