@@ -37,6 +37,10 @@
   --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.color-neutral-darkest{
+  color: var(--neutral-darkest);
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -91,6 +95,14 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+blockquote {
+  margin: 0;
 }
 
 a.button,
