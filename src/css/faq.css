@@ -1,7 +1,3 @@
-.faq {
-  background-color: var(--japanese-laurel-light);
-}
-
 .container.is-faq {
   display: flex;
   flex-direction: column;

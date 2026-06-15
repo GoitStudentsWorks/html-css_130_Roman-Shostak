@@ -1,5 +1,5 @@
-.section {
-  color: var(--japanese-laurel-lighter);
+.section.is-assorts {
+  background-color: var(--japanese-laurel-lighter);
 }
 
 .height-365 {
