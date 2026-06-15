@@ -2,6 +2,7 @@
   padding-top: 64px;
   padding-bottom: 64px;
   color: var(--neutral-darkest);
+  background-color: var(--japanese-laurel-lightest);
 }
 
 @media (min-width: 1440px) {
@@ -32,25 +33,21 @@
   margin-bottom: 32px;
 }
 
-/* Прибрати коли з'являться іконки */
-/* .contacts-icon {
+.contact-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
   fill: var(--neutral-darkest);
-  transition: opacity var(--anim);
   margin-right: 18px;
+}
 
-
-  @media (min-width: 1440px) {
-    .contacts-icon {
-      margin-right: 16px;
-    }
+@media (min-width: 1440px) {
+  .contact-icon {
+    margin-right: 16px;
   }
-}*/
-
-/* Додати до contact-info:h/f та active */
-/* .contact-info:hover + .contact-icon,
-.contact-info:focus + .contact-icon
-
-.contact-info:active + .contact-icon, */
+}
 
 .contact-info {
   transition: opacity var(--anim);
