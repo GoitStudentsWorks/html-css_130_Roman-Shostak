@@ -1,62 +1,45 @@
 /* FAQ accordion */
 
-const faqItems = document.querySelectorAll(".faq-item");
+const list = document.querySelector(".faq-list");
 
-// Animate an answer open: pin 0 → its full height, then release to CSS `auto`.
-const openItem = (item) => {
-  const answer = item.querySelector(".faq-answer");
-  const button = item.querySelector(".faq-question");
+if (list) {
+  // Slide an answer between height:0 and its content height. The transitionend
+  // handler then clears the inline height so CSS owns the resting state
+  // (auto while open, 0 while closed) and it stays responsive to resize.
+  const toggle = (item, open) => {
+    const answer = item.querySelector(".faq-answer");
 
-  answer.style.height = "0px";
-  answer.offsetHeight; // force reflow so the next change animates
+    item.querySelector(".faq-question").setAttribute("aria-expanded", open);
+    answer.style.height = `${open ? 0 : answer.scrollHeight}px`;
+    answer.offsetHeight; // force reflow so the next change animates
+    item.classList.toggle("active", open);
+    answer.style.height = `${open ? answer.scrollHeight : 0}px`;
+  };
 
-  item.classList.add("active");
-  button.setAttribute("aria-expanded", "true");
-  answer.style.height = `${answer.scrollHeight}px`;
-};
+  // Sync initial ARIA with the HTML (first item is open by default).
+  list
+    .querySelectorAll(".faq-item")
+    .forEach((item) =>
+      item
+        .querySelector(".faq-question")
+        .setAttribute("aria-expanded", item.classList.contains("active")),
+    );
 
-// Animate an answer closed: pin its current height, then collapse to 0.
-const closeItem = (item) => {
-  const answer = item.querySelector(".faq-answer");
-  const button = item.querySelector(".faq-question");
-
-  answer.style.height = `${answer.scrollHeight}px`;
-  answer.offsetHeight; // force reflow
-
-  item.classList.remove("active");
-  button.setAttribute("aria-expanded", "false");
-  answer.style.height = "0px";
-};
-
-faqItems.forEach((item) => {
-  const button = item.querySelector(".faq-question");
-  const answer = item.querySelector(".faq-answer");
-
-  // Sync ARIA with the initial (HTML) state — first item is open by default.
-  button.setAttribute("aria-expanded", item.classList.contains("active"));
-
-  // After each transition drop the inline height so CSS owns the resting
-  // state again: `auto` while active (adapts to resize), `0` while closed.
-  answer.addEventListener("transitionend", (event) => {
-    if (event.propertyName === "height") {
-      answer.style.height = "";
-    }
+  list.addEventListener("transitionend", (event) => {
+    if (event.propertyName === "height") event.target.style.height = "";
   });
 
-  button.addEventListener("click", () => {
-    const isActive = item.classList.contains("active");
+  list.addEventListener("click", (event) => {
+    const item = event.target.closest(".faq-question")?.closest(".faq-item");
+    if (!item) return;
 
-    // Single-open accordion: collapse any other open item.
-    faqItems.forEach((other) => {
-      if (other !== item && other.classList.contains("active")) {
-        closeItem(other);
-      }
-    });
+    const open = !item.classList.contains("active");
 
-    if (isActive) {
-      closeItem(item);
-    } else {
-      openItem(item);
-    }
+    // Single-open accordion: collapse whichever item is currently open.
+    list
+      .querySelectorAll(".faq-item.active")
+      .forEach((other) => other !== item && toggle(other, false));
+
+    toggle(item, open);
   });
-});
+}
