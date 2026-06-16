@@ -10,12 +10,11 @@
 | :-------------------- | :-------------- | :--------------------------------------------------------- | :--------------- |
 | Roman Shostak         | 🧑‍💻 Team Lead    | [@Roman-Shostak](https://https://github.com/Roman-Shostak) | `@Roman S.`      |
 | Valerii Ovdiienko     | 🌀 Scrum Master | [@ValeriiOvdiienko](https://github.com/ValeriiOvdiienko)   | `@Валерій`       |
-| Anna Kovalchuk        | 💻 Developer    | [@github-nickname](https://github.com/github-nickname)     | `@Anna`          |
-| Alina Demkova         | 💻 Developer    | [@github-nickname](https://github.com/github-nickname)     | `@Alina Demkova` |
-| Viktoria              | 💻 Developer    | [@github-nickname](https://github.com/github-nickname)     | `@@iwtod`        |
+| Anna Kovalchuk        | 💻 Developer    | [@annakv545-png](https://github.com/annakv545-png)     | `@Anna`          |
+| Alina Demkova         | 💻 Developer    | [@alina-demkova](https://github.com/alina-demkova)     | `@Alina Demkova` |
+| Viktoriia Yemets              | 💻 Developer    | [@iNevTodD](https://github.com/iNevTodD)     | `@@iwtod`        |
 | Marina Litvin         | 💻 Developer    | [@MarinaLitvin](https://github.com/MarinaLitvin)           | `@Marina Litvin` |
-| Pavlo Vanyk           | 💻 Developer    | [@github-nickname](https://github.com/github-nickname)     | `@Pavlo Vanyk`   |
-| Roman                 | 💻 Developer    | [@github-nickname](https://github.com/github-nickname)     | `@Roman`         |
+| Pavlo Vanyk           | 💻 Developer    | [@pavlovanyk](https://github.com/pavlovanyk)     | `@Pavlo Vanyk`   |
 | Stanislav Palamarchuk | 💻 Developer    | [@Stasyandri4](https://github.com/Stasyandri4)             | `@Stanislav`     |
 | Vitalii Katrych       | 💻 Developer    | [@vtkatrych](https://github.com/vtkatrych)                 | `@Vitalii`       |
 
