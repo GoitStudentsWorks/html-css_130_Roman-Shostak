@@ -10,7 +10,7 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  min-height: 630px;
   background-image: var(--hero-overlay), url("/images/hero/hero-bg.avif");
   background-size: cover;
   background-position: center;
@@ -36,6 +36,7 @@
 /* 1x + retina bg deckstop*/
 @media (min-width: 1440px) {
   .section.is-hero {
+    min-height: 900px;
     background-image: var(--hero-overlay), url("/images/hero/hero-bg-d.avif");
   }
 }
