@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   min-height: 100vh;
-  background-image: var(--hero-overlay), url("/images/hero/hero-bg.jpg");
+  background-image: var(--hero-overlay), url("/images/hero/hero-bg.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,29 +19,29 @@
 /* retina bg mobile*/
 @media (min-resolution: 192dpi) {
   .section.is-hero {
-    background-image: var(--hero-overlay), url("/images/hero/hero-bg@2x.jpg");
+    background-image: var(--hero-overlay), url("/images/hero/hero-bg@2x.avif");
   }
 }
 /* 1x + retina bg tablet*/
 @media (min-width: 768px) {
   .section.is-hero {
-    background-image: var(--hero-overlay), url("/images/hero/hero-bg-t.jpg");
+    background-image: var(--hero-overlay), url("/images/hero/hero-bg-t.avif");
   }
 }
 @media (min-width: 768px) and (min-resolution: 192dpi) {
   .section.is-hero {
-    background-image: var(--hero-overlay), url("/images/hero/hero-bg-t@2x.jpg");
+    background-image: var(--hero-overlay), url("/images/hero/hero-bg-t@2x.avif");
   }
 }
 /* 1x + retina bg deckstop*/
 @media (min-width: 1440px) {
   .section.is-hero {
-    background-image: var(--hero-overlay), url("/images/hero/hero-bg-d.jpg");
+    background-image: var(--hero-overlay), url("/images/hero/hero-bg-d.avif");
   }
 }
 @media (min-width: 1440px) and (min-resolution: 192dpi) {
   .section.is-hero {
-    background-image: var(--hero-overlay), url("/images/hero/hero-bg-d@2x.jpg");
+    background-image: var(--hero-overlay), url("/images/hero/hero-bg-d@2x.avif");
   }
 }
 /* top and bottom margins of paragraph */
