@@ -147,8 +147,29 @@
   }
 }
 
+.form-img {
+  display: block;
+}
+
+.form-img img {
+  display: block;
+  width: 100%;
+  height: 343px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .form-img img {
+    height: 637px;
+  }
+}
+
 @media (min-width: 1440px) {
   .form-img {
     flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .form-img img {
+    height: 757px;
   }
 }
