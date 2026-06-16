@@ -1,4 +1,5 @@
 /* Global / common styles */
+@import url("./modern-normalize.css");
 @import url("./common.css");
 
 /* Section styles */
