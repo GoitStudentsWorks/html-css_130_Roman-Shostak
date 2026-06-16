@@ -130,7 +130,8 @@ body.menu-open {
 .burger-menu {
   position: absolute;
   top: 0;
-  width: 100vw;
+  right: 0;
+  width: 100%;
   height: 100vh;
   color: var(--white);
   background-color: var(--japanese-laurel-light);
