@@ -4,12 +4,90 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Organic Shop – your source for fresh, healthy, and responsibly grown organic food. Discover locally sourced fruits, vegetables, dairy and more, delivered to your table."
+    />
+    <meta name="theme-color" content="#1a5901" />
+
+    <!-- Open Graph / social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Organic Shop – Naturally better." />
+    <meta
+      property="og:description"
+      content="Fresh, healthy, and responsibly grown organic products. Discover the taste of nature."
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Preload the LCP hero background. Mirrors the art-direction cascade in
+         hero.css exactly (one match per device → no double download) so the
+         preload scanner fetches the same file the CSS paints, with high
+         priority, instead of waiting for the stylesheet to be parsed. -->
+    <link
+      rel="preload"
+      as="image"
+      href="/images/hero/hero-bg.avif"
+      fetchpriority="high"
+      media="(max-width: 767px) and (max-resolution: 191dpi)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/hero/hero-bg@2x.avif"
+      fetchpriority="high"
+      media="(max-width: 767px) and (min-resolution: 192dpi)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/hero/hero-bg-t.avif"
+      fetchpriority="high"
+      media="(min-width: 768px) and (max-width: 1439px) and (max-resolution: 191dpi)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/hero/hero-bg-t@2x.avif"
+      fetchpriority="high"
+      media="(min-width: 768px) and (max-width: 1439px) and (min-resolution: 192dpi)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/hero/hero-bg-d.avif"
+      fetchpriority="high"
+      media="(min-width: 1440px) and (max-resolution: 191dpi)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/hero/hero-bg-d@2x.avif"
+      fetchpriority="high"
+      media="(min-width: 1440px) and (min-resolution: 192dpi)"
+    />
+
+    <!-- Fonts: load asynchronously so they don't block first paint.
+         display=swap already renders text immediately in the fallback. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Chivo&family=Public+Sans:wght@400;500;600;700&display=swap"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Chivo&family=Public+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Chivo&family=Public+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
     <link rel="stylesheet" href="./css/main.css" />
     <title>Organic Shop</title>
   </head>
