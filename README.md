@@ -1,22 +1,134 @@
-# 🚀 GoIT Team Project
+# 🌿 Organic Shop — _Naturally better_
 
-> Командний навчальний проєкт, створений у межах курсу **GoIT**.
+> Лендинг інтернет-магазину фермерської еко-продукції. Місток між локальними фермерами органічних продуктів та свідомими міськими мешканцями.
+>
+> Командний навчальний проєкт курсу **GoIT** (команда №3).
+
+<p align="center">
+  <a href="https://roman-shostak.github.io/project-aurora07/"><b>🌐 Жива сторінка</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/Roman-Shostak/project-aurora07"><b>💻 Репозиторій</b></a>
+</p>
+
+---
+
+## 📖 Про проєкт
+
+**Organic Shop** — це лендинг, який за перші секунди візуально доносить цінність органічної продукції та дозволяє миттєво перейти до каталогу. Замість походів у крамницю із сумнівною свіжістю чи на ринки без гарантій екологічності — кілька кліків у швидкому, естетичному та інтуїтивно зрозумілому інтерфейсі.
+
+Ми свідомо відмовилися від зайвого візуального шуму на користь чистого, легкого дизайну, який на підсвідомому рівні підсилює екологічний меседж бренду. Сторінка повністю адаптивна — десктоп, планшет і мобільний — з мобільним бургер-меню.
+
+## 🎯 Які проблеми вирішує
+
+- **Сумнівна якість і свіжість** — працюємо напряму з локальними фермерами та показуємо інформацію про сертифікацію.
+- **Відсутність гарантій на ринках** — каталог містить лише перевірену еко-продукцію.
+- **Брак часу** — кілька кліків, і замовлення оформлене з доставкою або самовивозом.
+- **Роздробленість пропозиції** — продукція різних локальних фермерів зібрана на одній платформі.
+- **Недовіра до онлайн-покупок** — реальні відгуки та структурований FAQ знімають сумніви ще до покупки.
+
+## ✨ Секції лендингу
+
+| Секція          | Опис                                                                                                                                |
+| :-------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
+| **Header**      | Лаконічна навігація + акцентна кнопка **Order**. «Розумний» хедер ховається при прокручуванні вниз і миттєво повертається при прокручуванні вгору. |
+| **Hero**        | Перший екран із заголовком «Organic Shop — Naturally better», ціннісним меседжем і кнопкою-закликом.                                |
+| **Mission**     | Філософія бренду: партнерство з етичними фермерами, локальне походження, сталість і якість.                                         |
+| **Benefits**    | Блок «Why Choose Organic?» — чотири переваги, кожна з власною SVG-іконкою.                                                          |
+| **Assortment**  | Каталог із 8 товарів: якісне фото, назва, опис і чітко виділена ціна. Зображення адаптивні з мікроанімаціями кнопок.               |
+| **Feedbacks**   | 8 реальних відгуків покупців з аватарами — соціальний доказ.                                                                        |
+| **FAQ**         | Акордеон поширених запитань у режимі «одне відкрите питання за раз» із плавною анімацією.                                            |
+| **Contacts**    | Доступна форма зворотного зв'язку (ім'я, email, повідомлення) з лейблами.                                                            |
+| **Footer**      | Посилання на соцмережі та повторна навігація сторінкою.                                                                              |
+
+## 🛠️ Технологічний стек
+
+**Верстка та стилі**
+
+- **HTML5** — семантична розмітка, розбита на перевикористовувані partials (`header`, `hero`, `mission`, …, `footer`)
+- **CSS3** — власна система дизайн-токенів (CSS-змінні: палітра, прозорості, `--anim`), утилітарні класи (`text-size-*`, `text-color-*`, `margin-*`) і комбо-модифікатори (`is-hero`, `is-benefits`); скидання стилів — `modern-normalize`
+- **SVG-спрайт** — іконки через `<use>`, легкі й чіткі на будь-якій роздільності
+- **AVIF + `<picture>`** — адаптивні зображення під десктоп / планшет / мобільний із підтримкою retina (`@2x`)
+
+**Інтерактив (vanilla JavaScript, без бібліотек)**
+
+- Розумний хедер (hide-on-scroll) на `requestAnimationFrame` + passive-слухачах
+- Бургер-меню зі скрол-локом і затемненням тла
+- Доступний FAQ-акордеон
+- Плавна навігація між секціями через `scroll-behavior` + якірні посилання
+
+**Збірка та інфраструктура**
+
+- **[Vite](https://vitejs.dev/)** — дев-сервер і продакшн-збірка; плагіни: `vite-plugin-html-inject` (partials), `vite-plugin-full-reload`, `postcss-sort-media-queries` (автосортування медіа-запитів у mobile-first)
+- **Git / GitHub** — командна розробка, гілки, code review
+- **GitHub Actions** — CI/CD: кожен пуш у `main` автоматично збирається й деплоїться на **GitHub Pages**
+- **Prettier** + **EditorConfig** і документований [гайд із іменування класів](css-class-naming.md) — єдиний стиль коду в команді
+- **Figma** — дизайн-макет
+
+## ⚡ Продуктивність та якість
+
+Сайт оптимізовано під **Google PageSpeed Insights** (Lighthouse, мобільний профіль):
+
+| Performance | Accessibility | Best Practices | SEO |
+| :---------: | :-----------: | :------------: | :-: |
+|   **93**    |    **100**    |    **100**     | **100** |
+
+Ключові оптимізації:
+
+- зображення у форматі **AVIF** з адаптивними джерелами під кожен брейкпоінт і retina;
+- `width`/`height` для всіх зображень — **CLS = 0** (без «стрибків» макета);
+- `loading="lazy"` + `decoding="async"` для зображень нижче згину;
+- прелоад LCP-фону hero з `fetchpriority="high"` точно за каскадом медіазапитів;
+- асинхронне завантаження веб-шрифтів (без блокування рендеру);
+- семантична розмітка, `aria`-атрибути та коректна ієрархія заголовків.
+
+## 📁 Структура проєкту
+
+```text
+src/
+├─ index.html         # точка входу, підключає partials через <load>
+├─ main.js            # імпорт скриптів секцій
+├─ partials/          # header, hero, mission, benefits, assorts, feedbacks, faq, contacts, footer
+├─ css/               # main.css + стилі секцій, дизайн-токени, modern-normalize
+├─ js/                # header.js (hide-on-scroll), burger.js, faq.js
+├─ images/            # AVIF (адаптивні + @2x) та sprite.svg
+└─ public/            # favicon
+```
+
+## 🚀 Локальний запуск
+
+```bash
+# 1. Встановити залежності
+npm install
+
+# 2. Запустити дев-сервер (http://localhost:5173)
+npm run dev
+
+# 3. Зібрати продакшн-версію у /dist
+npm run build
+
+# 4. Переглянути продакшн-збірку локально
+npm run preview
+```
+
+> Потрібен **Node.js 18+**.
 
 ---
 
 ## 📊 Зведена таблиця команди
 
-| 👤 Ім'я               | 🎯 Роль         | 🐙 GitHub                                                  | 💬 Slack         |
-| :-------------------- | :-------------- | :--------------------------------------------------------- | :--------------- |
-| Roman Shostak         | 🧑‍💻 Team Lead    | [@Roman-Shostak](https://https://github.com/Roman-Shostak) | `@Roman S.`      |
-| Valerii Ovdiienko     | 🌀 Scrum Master | [@ValeriiOvdiienko](https://github.com/ValeriiOvdiienko)   | `@Валерій`       |
-| Anna Kovalchuk        | 💻 Developer    | [@annakv545-png](https://github.com/annakv545-png)     | `@Anna`          |
-| Alina Demkova         | 💻 Developer    | [@alina-demkova](https://github.com/alina-demkova)     | `@Alina Demkova` |
-| Viktoriia Yemets              | 💻 Developer    | [@iNevTodD](https://github.com/iNevTodD)     | `@@iwtod`        |
-| Marina Litvin         | 💻 Developer    | [@MarinaLitvin](https://github.com/MarinaLitvin)           | `@Marina Litvin` |
-| Pavlo Vanyk           | 💻 Developer    | [@pavlovanyk](https://github.com/pavlovanyk)     | `@Pavlo Vanyk`   |
-| Stanislav Palamarchuk | 💻 Developer    | [@Stasyandri4](https://github.com/Stasyandri4)             | `@Stanislav`     |
-| Vitalii Katrych       | 💻 Developer    | [@vtkatrych](https://github.com/vtkatrych)                 | `@Vitalii`       |
+| 👤 Ім'я               | 🎯 Роль         | 🐙 GitHub                                                | 💬 Slack         |
+| :-------------------- | :-------------- | :------------------------------------------------------- | :--------------- |
+| Roman Shostak         | 🧑‍💻 Team Lead    | [@Roman-Shostak](https://github.com/Roman-Shostak)       | `@Roman S.`      |
+| Valerii Ovdiienko     | 🌀 Scrum Master | [@ValeriiOvdiienko](https://github.com/ValeriiOvdiienko) | `@Валерій`       |
+| Anna Kovalchuk        | 💻 Developer    | [@annakv545-png](https://github.com/annakv545-png)       | `@Anna`          |
+| Alina Demkova         | 💻 Developer    | [@alina-demkova](https://github.com/alina-demkova)       | `@Alina Demkova` |
+| Viktoriia Yemets      | 💻 Developer    | [@iNevTodD](https://github.com/iNevTodD)                 | `@iwtod`         |
+| Marina Litvin         | 💻 Developer    | [@MarinaLitvin](https://github.com/MarinaLitvin)         | `@Marina Litvin` |
+| Pavlo Vanyk           | 💻 Developer    | [@pavlovanyk](https://github.com/pavlovanyk)             | `@Pavlo Vanyk`   |
+| Stanislav Palamarchuk | 💻 Developer    | [@Stasyandri4](https://github.com/Stasyandri4)           | `@Stanislav`     |
+| Vitalii Katrych       | 💻 Developer    | [@vtkatrych](https://github.com/vtkatrych)               | `@Vitalii`       |
+
+> **Тімлід** Роман Шостак відповідав за архітектуру, глобальні класи, стилі та змінні, а також за фінальну перевірку й оптимізацію коду. **Scrum-master** Валерій Овдієнко організував командну дошку та працював над секціями Header і Hero й оптимізацією зображень. Команда із семи розробників за спринт у 5 днів реалізувала 7 секцій і мобільне меню в адаптивній верстці.
 
 ---
 
