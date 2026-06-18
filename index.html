@@ -1,0 +1,1414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/html-css_130_Roman-Shostak/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Organic Shop – your source for fresh, healthy, and responsibly grown organic food. Discover locally sourced fruits, vegetables, dairy and more, delivered to your table."
+    />
+    <meta name="theme-color" content="#1a5901" />
+
+    <!-- Open Graph / social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Organic Shop – Naturally better." />
+    <meta
+      property="og:description"
+      content="Fresh, healthy, and responsibly grown organic products. Discover the taste of nature."
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <!-- Preload the LCP hero background. Mirrors the art-direction cascade in
+         hero.css exactly (one match per device → no double download) so the
+         preload scanner fetches the same file the CSS paints, with high
+         priority, instead of waiting for the stylesheet to be parsed. -->
+    <link
+      rel="preload"
+      as="image"
+      href="/html-css_130_Roman-Shostak/assets/hero-bg-DIip_z-M.avif"
+      fetchpriority="high"
+      media="(max-width: 767px) and (max-resolution: 191dpi)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/html-css_130_Roman-Shostak/assets/hero-bg@2x-BoiPPPgD.avif"
+      fetchpriority="high"
+      media="(max-width: 767px) and (min-resolution: 192dpi)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/html-css_130_Roman-Shostak/assets/hero-bg-t-B0ocV5C_.avif"
+      fetchpriority="high"
+      media="(min-width: 768px) and (max-width: 1439px) and (max-resolution: 191dpi)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/html-css_130_Roman-Shostak/assets/hero-bg-t@2x-DnHyee40.avif"
+      fetchpriority="high"
+      media="(min-width: 768px) and (max-width: 1439px) and (min-resolution: 192dpi)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/html-css_130_Roman-Shostak/assets/hero-bg-d-DlUogIAx.avif"
+      fetchpriority="high"
+      media="(min-width: 1440px) and (max-resolution: 191dpi)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/html-css_130_Roman-Shostak/assets/hero-bg-d@2x-DTHdpdw7.avif"
+      fetchpriority="high"
+      media="(min-width: 1440px) and (min-resolution: 192dpi)"
+    />
+
+    <!-- Fonts: load asynchronously so they don't block first paint.
+         display=swap already renders text immediately in the fallback. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Chivo&family=Public+Sans:wght@400;500;600;700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo&family=Public+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Chivo&family=Public+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <title>Organic Shop</title>
+    <script type="module" crossorigin src="/html-css_130_Roman-Shostak/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/html-css_130_Roman-Shostak/assets/index-B_wA0Cax.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container is-header">
+    <div class="logo-wrapper">
+      <a href="#home" aria-label="Organic Shop home">
+        <svg class="logo" width="142" height="60">
+          <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#logo"></use>
+        </svg>
+      </a>
+    </div>
+    <nav class="navigation">
+      <ul class="nav-list">
+        <li>
+          <a href="#home" class="text-regular-normal is-header">Home</a>
+        </li>
+        <li>
+          <a href="#mission" class="text-regular-normal is-header">Mission</a>
+        </li>
+        <li>
+          <a href="#benefits" class="text-regular-normal is-header">Benefits</a>
+        </li>
+        <li>
+          <a href="#assortment" class="text-regular-normal is-header"
+            >Assortment</a
+          >
+        </li>
+        <li>
+          <a href="#feedbacks" class="text-regular-normal is-header"
+            >Feedbacks</a
+          >
+        </li>
+        <li>
+          <a href="#faq" class="text-regular-normal is-header">FAQ</a>
+        </li>
+        <li>
+          <a href="#contacts" class="text-regular-normal is-header">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="a-wrapper-92-32 mobile-hide">
+      <a class="button is-small" href="#assortment">Order</a>
+    </div>
+    <div class="burger-buttons" id="burger-toggle">
+      <button
+        type="button"
+        class="burger-open-button"
+        aria-label="Open navigation menu"
+      >
+        <svg class="burger-open" width="32" height="32">
+          <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#burger-open"></use>
+        </svg>
+      </button>
+      <button
+        type="button"
+        class="burger-close-button"
+        aria-label="Close navigation menu"
+      >
+        <svg class="burger-close" width="32" height="32">
+          <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#burger-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="burger-menu">
+    <div class="container">
+      <ul class="burger-nav">
+        <li>
+          <a class="text-medium-semibold is-header" href="#home">Home</a>
+        </li>
+        <li>
+          <a class="text-medium-semibold is-header" href="#mission">Mission</a>
+        </li>
+        <li>
+          <a class="text-medium-semibold is-header" href="#benefits"
+            >Benefits</a
+          >
+        </li>
+        <li>
+          <a class="text-medium-semibold is-header" href="#assortment"
+            >Assortment</a
+          >
+        </li>
+        <li>
+          <a class="text-medium-semibold is-header" href="#feedbacks"
+            >Feedbacks</a
+          >
+        </li>
+        <li>
+          <a class="text-medium-semibold is-header" href="#faq">FAQ</a>
+        </li>
+        <li>
+          <a class="text-medium-semibold is-header" href="#contacts"
+            >Contacts</a
+          >
+        </li>
+      </ul>
+      <a class="button" href="#assortment">Order</a>
+    </div>
+  </div>
+</header>
+<div class="menu-overlay"></div>
+
+
+    <main>
+      <section class="section is-hero" id="home">
+  <div class="container is-hero">
+    <div class="hero-text-wrapper">
+      <h1 class="text-size-xl is-hero">Organic Shop – Naturally better.</h1>
+      <p>
+        Your source for fresh, healthy, and responsibly grown food. Discover the
+        taste of nature with our carefully selected organic products.
+      </p>
+    </div>
+    <div class="a-wrapper-254-36">
+      <a href="#contacts" class="button-primary">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+
+      <section class="section" id="mission">
+  <div class="container">
+    <div class="mission-description">
+      <h2 class="mission-description-title text-size-lg">
+        Our Mission: Fresh, Local, and Organic for a Healthier Tomorrow.
+      </h2>
+      <p class="mission-description-text">
+        At Organic Shop, we believe in the power of nature. Our mission is to
+        provide you with fresh, locally sourced organic products that nourish
+        both body and soul. We partner with ethical farmers who share our
+        commitment to sustainability and quality.
+      </p>
+    </div>
+    <picture>
+      <source
+        media="(min-width: 1440px)"
+        srcset="/html-css_130_Roman-Shostak/assets/mission-d-BBrO8BMx.avif 1x, /html-css_130_Roman-Shostak/assets/mission-d@2x-CiwP_0xV.avif 2x"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="/html-css_130_Roman-Shostak/assets/mission-t-CNqDpMvp.avif 1x, /html-css_130_Roman-Shostak/assets/mission-t@2x-zJSDb2Nu.avif 2x"
+      />
+      <img
+        class="mission-image"
+        loading="lazy"
+        decoding="async"
+        src="/html-css_130_Roman-Shostak/assets/mission-OlGTpTAd.avif"
+        srcset="/html-css_130_Roman-Shostak/assets/mission-OlGTpTAd.avif 1x, /html-css_130_Roman-Shostak/assets/mission@2x-TacYaVqW.avif 2x"
+        alt="A diverse team of people around table packing organic vegetables into bags."
+        width="343"
+        height="193"
+      />
+    </picture>
+  </div>
+</section>
+
+
+      <section class="section is-benefits">
+  <div class="container">
+    <div class="benefits-content">
+      <div class="benefits-text">
+        <h2 class="text-size-lg text-color-white margin-bottom-24">
+          Why Choose Organic?
+        </h2>
+        <p>
+          Organic products offer a healthier choice for you and your family.
+          With no synthetic pesticides or GMOs, you can enjoy better nutrition
+          and natural flavors while supporting sustainable farming practices.
+        </p>
+        <ul class="item-list">
+          <li class="why-item">
+            <svg class="icon-benefits" width="48" height="48">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#health"></use>
+            </svg>
+            <h3 class="text-size-xxs text-color-white margin-bottom-8">
+              Better for Your Health
+            </h3>
+            <p class="text-regular-normal text-color-white">
+              Organic foods are grown without synthetic chemicals, making them
+              safer for your body. They're rich in antioxidants and nutrients
+              that support your immune system and long-term well-being.
+            </p>
+          </li>
+          <li class="why-item">
+            <svg class="icon-benefits" width="48" height="48">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#basketball"></use>
+            </svg>
+            <h3 class="text-size-xxs text-color-white margin-bottom-8">
+              Protecting the Planet
+            </h3>
+            <p class="text-regular-normal text-color-white">
+              Organic farming reduces pollution, conserves water, and improves
+              soil health. By choosing organic, you're helping build a cleaner,
+              more sustainable environment for future generations.
+            </p>
+          </li>
+          <li class="why-item">
+            <svg class="icon-benefits" width="48" height="48">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#restaurant"></use>
+            </svg>
+            <h3 class="text-size-xxs text-color-white margin-bottom-8">
+              Fruits & Vegetables
+            </h3>
+            <p class="text-regular-normal text-color-white">
+              Freshly picked organic produce delivered straight from local farms
+              to your table.
+            </p>
+          </li>
+          <li class="why-item">
+            <svg class="icon-benefits" width="48" height="48">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#cheese"></use>
+            </svg>
+            <h3 class="text-size-xxs text-color-white margin-bottom-8">
+              Dairy Products
+            </h3>
+            <p class="text-regular-normal text-color-white">
+              Creamy, organic dairy options that are both delicious and
+              ethically sourced.
+            </p>
+          </li>
+        </ul>
+      </div>
+      <picture class="benefits-images">
+        <source
+          media="(min-width: 1440px)"
+          srcset="/html-css_130_Roman-Shostak/assets/benefits-d-DANBZUa_.avif 1x, /html-css_130_Roman-Shostak/assets/benefits-d@2x-BAL_YJEo.avif 2x"
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="/html-css_130_Roman-Shostak/assets/benefits-t-BNzOB8i_.avif 1x, /html-css_130_Roman-Shostak/assets/benefits-t@2x-XUHmtU91.avif 2x"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="/html-css_130_Roman-Shostak/assets/benefits-u6tRgHic.avif 1x, /html-css_130_Roman-Shostak/assets/benefits@2x-CTu3qDYy.avif 2x"
+        />
+
+        <img
+          class="benefits-img"
+          loading="lazy"
+          decoding="async"
+          src="/html-css_130_Roman-Shostak/assets/benefits-u6tRgHic.avif"
+          alt="Organic food"
+          width="343"
+          height="487"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+
+      <section class="section is-assorts" id="assortment">
+  <div class="container">
+    <p class="text-size-tagline margin-bottom-16 text-color-dark">
+      Assortment
+    </p>
+    <h2
+      class="text-size-lg margin-bottom-24 text-color-dark width-344 width-768"
+    >
+      Explore Our Delicious Organic Product Range
+    </h2>
+
+    <ul class="assorts-list">
+      <li class="assorts-item">
+        <picture class="margin-bottom-16">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-1d-D2r3n1aV.avif 1x, /html-css_130_Roman-Shostak/assets/assort-1d@2x-CLaPG-as.avif 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-1t-BS0AfvwC.avif 1x, /html-css_130_Roman-Shostak/assets/assort-1t@2x-DlAJID7J.avif 2x"
+          />
+          <img
+            class="assort-image height-365 width-100"
+            loading="lazy"
+            decoding="async"
+            width="343"
+            height="365"
+            src="/html-css_130_Roman-Shostak/assets/assort-1-Bf0XEI84.avif"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-1-Bf0XEI84.avif 1x, /html-css_130_Roman-Shostak/assets/assort-1@2x-B4zxrA1Q.avif 2x"
+            alt="Top-down photo of fresh organic carrots with green tops arranged in a woven basket on a light wooden background, a hint of soil and greenery around, soft natural daylight, styled for a clean and earthy look."
+          />
+
+
+        </picture>
+        <div class="assorts-meta">
+          <div class="assorts-item-info">
+            <h3 class="text-medium-semibold text-color-dark">
+              Organic Gala Apples
+            </h3>
+            <p class="text-small-normal text-color-dark">
+              Juicy, crisp, and sweet apples grown without pesticides.
+            </p>
+          </div>
+          <div class="assorts-price-box">
+            <span class="text-large-semibold text-color-dark">$3.50</span>
+            <span class="text-size-custom text-color-dark width-53 height-26"
+              >per 1 pound</span
+            >
+          </div>
+        </div>
+        <button class="button-secondary btn-cart" type="button">
+          Add to Cart
+        </button>
+      </li>
+
+      <li class="assorts-item">
+        <picture class="margin-bottom-16">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-2d-DfbQX1no.avif 1x, /html-css_130_Roman-Shostak/assets/assort-2d@2x-CnxoqDHn.avif 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-2t-zUOHJtC1.avif 1x, /html-css_130_Roman-Shostak/assets/assort-2t@2x-CnQPxRPE.avif 2x"
+          />
+          <img
+            class="assort-image height-365 width-100"
+            loading="lazy"
+            decoding="async"
+            width="343"
+            height="365"
+            src="/html-css_130_Roman-Shostak/assets/assort-2-DBcWfU_X.avif"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-2-DBcWfU_X.avif 1x, /html-css_130_Roman-Shostak/assets/assort-2@2x-DI0ehjC7.avif 2x"
+            alt="Top-down view of fresh organic spinach leaves inside a kraft paper bag, placed on a light wooden table with a soft green linen cloth underneath, natural daylight, crisp and clean layout, minimal rustic detail."
+          />
+
+
+        </picture>
+        <div class="assorts-meta">
+          <div class="assorts-item-info">
+            <h3 class="text-medium-semibold text-color-dark">
+              Fresh Organic Spinach
+            </h3>
+            <p class="text-small-normal text-color-dark">
+              Young spinach leave hand-picked from a local organic farm
+            </p>
+          </div>
+          <div class="assorts-price-box">
+            <span class="text-large-semibold text-color-dark">$2.80</span>
+            <span class="text-size-custom text-color-dark width-53 height-26"
+              >per bunch</span
+            >
+          </div>
+        </div>
+        <button class="button-secondary btn-cart" type="button">
+          Add to Cart
+        </button>
+      </li>
+
+      <li class="assorts-item">
+        <picture class="margin-bottom-16">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-3d-B3BMy-pM.avif 1x, /html-css_130_Roman-Shostak/assets/assort-3d@2x-B7FSqEBQ.avif 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-3t-CD_vPhL5.avif 1x, /html-css_130_Roman-Shostak/assets/assort-3t@2x-D5AOQZaT.avif 2x"
+          />
+          <img
+            class="assort-image height-365 width-100"
+            loading="lazy"
+            decoding="async"
+            width="343"
+            height="365"
+            src="/html-css_130_Roman-Shostak/assets/assort-3-Dab5owvM.avif"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-3-Dab5owvM.avif 1x, /html-css_130_Roman-Shostak/assets/assort-3@2x-DLZxzuCM.avif 2x"
+            alt="Top-down photo of 12 brown free-range organic eggs in a paper carton on a light wooden surface, one feather beside the carton, soft shadows from natural window light, clean background with warm organic tones."
+          />
+
+
+        </picture>
+        <div class="assorts-meta">
+          <div class="assorts-item-info">
+            <h3 class="text-medium-semibold text-color-dark">
+              Free-Range Organic Eggs
+            </h3>
+            <p class="text-small-normal text-color-dark">
+              Eggs from free-range hens fed with natural feed
+            </p>
+          </div>
+
+          <div class="assorts-price-box">
+            <span class="text-large-semibold text-color-dark">$5.00</span>
+            <span class="text-size-custom text-color-dark width-53 height-26"
+              >per dozen</span
+            >
+          </div>
+        </div>
+        <button class="button-secondary btn-cart" type="button">
+          Add to Cart
+        </button>
+      </li>
+
+      <li class="assorts-item">
+        <picture class="margin-bottom-16">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-4d-DxbaCnV_.avif 1x, /html-css_130_Roman-Shostak/assets/assort-4d@2x-DMW8ziyk.avif 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-4t-DXZvMxET.avif 1x, /html-css_130_Roman-Shostak/assets/assort-4t@2x-OC00Pod_.avif 2x"
+          />
+          <img
+            class="assort-image height-365 width-100"
+            loading="lazy"
+            decoding="async"
+            width="343"
+            height="365"
+            src="/html-css_130_Roman-Shostak/assets/assort-4-DSErCwvx.avif"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-4-DSErCwvx.avif 1x, /html-css_130_Roman-Shostak/assets/assort-4@2x-D7p92TtF.avif 2x"
+            alt=" Top-down view of a white bottle labeled “Organic Almond Milk” beside a small glass of almond milk and scattered raw almonds, placed on a light wooden background with subtle green cloth texture for accent."
+          />
+
+
+        </picture>
+        <div class="assorts-meta">
+          <div class="assorts-item-info">
+            <h3 class="text-medium-semibold text-color-dark">
+              Organic Almond Milk
+            </h3>
+            <p class="text-small-normal text-color-dark">
+              Natural plant-based milk with not added sugar - perfect for coffee
+              and breakfast
+            </p>
+          </div>
+          <div class="assorts-price-box">
+            <span class="text-large-semibold text-color-dark">$4.20</span>
+            <span class="text-size-custom text-color-dark width-53 height-26"
+              >per 1 liter</span
+            >
+          </div>
+        </div>
+        <button class="button-secondary btn-cart" type="button">
+          Add to Cart
+        </button>
+      </li>
+
+      <li class="assorts-item">
+        <picture class="margin-bottom-16">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-5d-Bo3olpiA.avif 1x, /html-css_130_Roman-Shostak/assets/assort-5d@2x-EaTOx_kx.avif 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-5t-C_g61shQ.avif 1x, /html-css_130_Roman-Shostak/assets/assort-5t@2x-C3ONpJws.avif 2x"
+          />
+          <img
+            class="assort-image height-365 width-100"
+            loading="lazy"
+            decoding="async"
+            width="343"
+            height="365"
+            src="/html-css_130_Roman-Shostak/assets/assort-5-CdnE-Qzt.avif"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-5-CdnE-Qzt.avif 1x, /html-css_130_Roman-Shostak/assets/assort-5@2x-C-3OUgNI.avif 2x"
+            alt="Top-down image of a glass jar filled with golden raw honey and a wooden dipper resting beside it, placed on a light wooden table with a small bunch of dried flowers and a soft linen cloth in the corner, warm natural lighting."
+          />
+
+
+        </picture>
+        <div class="assorts-meta">
+          <div class="assorts-item-info">
+            <h3 class="text-medium-semibold text-color-dark">
+              Raw Organic Honey
+            </h3>
+            <p class="text-small-normal text-color-dark">
+              Unfiltered honey atraight from the apiary — natural, sweet and
+              healthy.
+            </p>
+          </div>
+          <div class="assorts-price-box">
+            <span class="text-large-semibold text-color-dark">$7.50</span>
+            <span class="text-size-custom text-color-dark width-53 height-26"
+              >per 500 ml jar</span
+            >
+          </div>
+        </div>
+        <button class="button-secondary btn-cart" type="button">
+          Add to Cart
+        </button>
+      </li>
+
+      <li class="assorts-item">
+        <picture class="margin-bottom-16">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-6d-BGvuBbu2.avif 1x, /html-css_130_Roman-Shostak/assets/assort-6d@2x-BIJOL9JK.avif 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-6t-DTgKjgJW.avif 1x, /html-css_130_Roman-Shostak/assets/assort-6t@2x-N1j9LcDb.avif 2x"
+          />
+          <img
+            class="assort-image height-365 width-100"
+            loading="lazy"
+            decoding="async"
+            width="343"
+            height="365"
+            src="/html-css_130_Roman-Shostak/assets/assort-6-LQVMHco1.avif"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-6-LQVMHco1.avif 1x, /html-css_130_Roman-Shostak/assets/assort-6@2x-DSCG2byn.avif 2x"
+            alt=" Top-down photo of fresh organic carrots with green tops arranged in a woven basket on a light wooden background, a hint of soil and greenery around, soft natural daylight, styled for a clean and earthy look."
+          />
+
+
+        </picture>
+        <div class="assorts-meta">
+          <div class="assorts-item-info">
+            <h3 class="text-medium-semibold text-color-dark">
+              Organic Carrots
+            </h3>
+            <p class="text-small-normal text-color-dark">
+              Crunchy and sweet carrots grown without chemicals.
+            </p>
+          </div>
+
+          <div class="assorts-price-box">
+            <span class="text-large-semibold text-color-dark">$1.90</span>
+            <span class="text-size-custom text-color-dark width-53 height-26"
+              >per 1 pound</span
+            >
+          </div>
+        </div>
+        <button class="button-secondary btn-cart" type="button">
+          Add to Cart
+        </button>
+      </li>
+
+      <li class="assorts-item">
+        <picture class="margin-bottom-16">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-7d-8UeBlSta.avif 1x, /html-css_130_Roman-Shostak/assets/assort-7d@2x-COqSvG48.avif 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-7t-D7Kv9ZOI.avif 1x, /html-css_130_Roman-Shostak/assets/assort-7t@2x-Po20a211.avif 2x"
+          />
+          <img
+            class="assort-image height-365 width-100"
+            loading="lazy"
+            decoding="async"
+            width="343"
+            height="365"
+            src="/html-css_130_Roman-Shostak/assets/assort-7-CeglXYWE.avif"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-7-CeglXYWE.avif 1x, /html-css_130_Roman-Shostak/assets/assort-7@2x-Dtxu5iZt.avif 2x"
+            alt="  Top-down view of a sliced loaf of organic wholegrain sourdough bread on a rustic wooden cutting board, placed on a light wooden surface with a green linen napkin and a few breadcrumbs around, warm natural tone."
+          />
+
+
+        </picture>
+        <div class="assorts-meta">
+          <div class="assorts-item-info">
+            <h3 class="text-medium-semibold text-color-dark">
+              Whole Organic Bread
+            </h3>
+            <p class="text-small-normal text-color-dark">
+              Homemade sourdough bread made with organic flour.
+            </p>
+          </div>
+
+          <div class="assorts-price-box">
+            <span class="text-large-semibold text-color-dark">$4.80</span>
+            <span class="text-size-custom text-color-dark width-53 height-26"
+              >per 1 loaf</span
+            >
+          </div>
+        </div>
+
+        <button class="button-secondary btn-cart" type="button">
+          Add to Cart
+        </button>
+      </li>
+
+      <li class="assorts-item">
+        <picture class="margin-bottom-16">
+          <source
+            media="(min-width: 1440px)"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-8d-BLvbGXT9.avif 1x, /html-css_130_Roman-Shostak/assets/assort-8d@2x-DirIW5VT.avif 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-8t-DOWMzXWH.avif 1x, /html-css_130_Roman-Shostak/assets/assort-8t@2x-C44L0X8I.avif 2x"
+          />
+          <img
+            class="assort-image height-365 width-100"
+            loading="lazy"
+            decoding="async"
+            width="343"
+            height="365"
+            src="/html-css_130_Roman-Shostak/assets/assort-8-DEdkgwmE.avif"
+            srcset="/html-css_130_Roman-Shostak/assets/assort-8-DEdkgwmE.avif 1x, /html-css_130_Roman-Shostak/assets/assort-8@2x-Cah-kH-7.avif 2x"
+            alt="Top-down view of a glass jar with dried herbal tea mix (mint, chamomile, thyme) placed on a light wooden table, some loose herbs scattered around for texture, linen cloth and gentle natural lighting for a calming feel."
+          />
+
+
+        </picture>
+        <div class="assorts-meta">
+          <div class="assorts-item-info">
+            <h3 class="text-medium-semibold text-color-dark">
+              Organic Herbal Tea Mix
+            </h3>
+            <p class="text-small-normal text-color-dark">
+              Fragrant blend of mint, chamomile and thyme - perfect for
+              relaxation.
+            </p>
+          </div>
+          <div class="assorts-price-box">
+            <span class="text-large-semibold text-color-dark">$6.30</span>
+            <span class="text-size-custom text-color-dark width-53 height-26"
+              >per 100g</span
+            >
+          </div>
+        </div>
+        <button class="button-secondary btn-cart" type="button">
+          Add to Cart
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+      <section class="section is-feedbacks" id="feedbacks">
+  <div class="container">
+    <div class="feedbacks__section-heading">
+      <h2 class="text-size-lg feedbacks__title">What Our Customers Say</h2>
+      <p class="feedbacks__description">
+        We’re proud to grow a community that values health, sustainability, and
+        real flavor. Read what our happy customers have to say about their
+        experience with our organic products.
+      </p>
+    </div>
+    <ul class="feedbacks-list">
+      <li class="feedbacks__list-item">
+        <figure class="feedbacks__card">
+          <div class="feedbacks__rating" data-rating="5">
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+          </div>
+
+          <blockquote>
+            <p class="feedbacks__text">
+              "Their eco-friendly packaging is a big plus for me. Highly
+              recommend!"
+            </p>
+          </blockquote>
+
+          <figcaption class="feedbacks__author">
+            <img
+              class="feedbacks__avatar"
+              loading="lazy"
+              decoding="async"
+              src="data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAAWBtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAADRpbG9jAAAAAERAAAIAAQAAAAABhAABAAAAAAAAAvMAAgAAAAAEdwABAAAAAAAAAOQAAAA4aWluZgAAAAAAAgAAABVpbmZlAgAAAAABAABhdjAxAAAAABVpbmZlAgAAAAACAABhdjAxAAAAAA5waXRtAAAAAAABAAAAn2lwcnAAAAB6aXBjbwAAAAxhdjFDgSACAAAAABRpc3BlAAAAAAAAADAAAAAwAAAADnBpeGkAAAAAAQgAAAAMYXYxQ4EAHAAAAAA4YXV4QwAAAAB1cm46bXBlZzptcGVnQjpjaWNwOnN5c3RlbXM6YXV4aWxpYXJ5OmFscGhhAAAAAB1pcG1hAAAAAAAAAAIAAQOBAgMAAgSEAgOFAAAAGmlyZWYAAAAAAAAADmF1eGwAAgABAAEAAAPfbWRhdBIACgk4FW+9pAQ0GkAy4wUYgmMEAAGkAAAC3Uxb/n5+r6wQNNsD4ChVfcVjW8aJDoC9hnUCz1BImx1pC1cGHJGGaZi0J4/+8IlFk7Nc2CPV1P4t11P+ckjnI7f6nIKpMOBwuQNWe879KjtQBPnqEWkcdWAsM7O5L2bhCL/yYXq/Yn3B3XzaiUKEz5ieyyWCOvJxpaT1xDn0QAEy2d9TOGCgIqfbb1a9gnJsVEPdZCPpUaNWcXzJOn71N2N8lzhPkPTGwtHBFeYwkDTPKR0X6SKDrxQk4TrGO1IV+cISm7a3XDcv135VyHOw2CDCdhwcmrkLcppXwDqXaww/GmvUWNzvwPIDFFvwKebgw2AUGZlzct/aFHWQFAZ6TTsTBF//9ZlAx+Twv68wa3hG84qkDClpvt921MMWpF4fr5FnoqOUrQStd97rlvDYY7DYqANXFTzCkBv6aDmNwJByiXjr5QZGidzEPanwegqLSoRBhUFONZbgCxEKSBNHYRruxooVASFWg781DlQEh4XbaciANwD5rRWqYPvmSQwoG2S1kwNtyeqY/VCCfFkfG7GsWnIFuP9FXQs0/kY5jf9hYtlINganbvnocRlW6JyW8o7yQi8XDhPOY2wyQkiW2S41b56bF2/EG6jszVTDKrBCZJjh6S4OR2Ue6U9dw0AeDUiE18TFdcCJ28iB2wDN0AHxUo2Ky9tVPxC/idH2uLeDbnmj7kBm4S0R3K9WTcVK3iisHs5ViH+ThuTiBa91xwXRnk/TQJbsfu9W6TwZrFSldeRsqKX8jnNHEKYzanVcDYktB7KN8KGjiD+JaVWnaHCUtFVuVbOINJ+7IiE4EdpKNn4pupYFIKHNGIGN3TV8dvWgxterhtl1yQT3bHOWmQB+2c2Ue1EdlBHMeva+vCFkoehczIVMQoKmfDrg6Gvscyr1L0cheHkYlgu1emA8bQQzyzzAX0vXrJW15RBOldo95pUO8kxS5G7kSZEYufac35PmCIuaThhAEgAKBhgVb72FQDLXAUXAAABQ0oEWt/SZkCs7pRYTdf1GCszPVH9xdDFLhYBuT/t3j0PHcICxXaSKM6ZH7quzg2WM6oJAVeW0BTP0UM0LIZJKUa8kHTFeZQOrDven0G7BreJpHIrTmu90r6mCfwMz/LOVt0TkWCo74FyijFAOUCsx3hxStJzTkH0eQM2wdNynz1j0s9dtQwQoqE90dgUUfD869HF89q5nG3xtup/W/k1S+MIhL/4Zj2c5zDdDoXSQUaTklbwpWn/+u/xPNRSZ/NYqaCNFhhm8pIXm+Z/sBSU99bZg"
+              srcset="data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAAWBtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAADRpbG9jAAAAAERAAAIAAQAAAAABhAABAAAAAAAAAvMAAgAAAAAEdwABAAAAAAAAAOQAAAA4aWluZgAAAAAAAgAAABVpbmZlAgAAAAABAABhdjAxAAAAABVpbmZlAgAAAAACAABhdjAxAAAAAA5waXRtAAAAAAABAAAAn2lwcnAAAAB6aXBjbwAAAAxhdjFDgSACAAAAABRpc3BlAAAAAAAAADAAAAAwAAAADnBpeGkAAAAAAQgAAAAMYXYxQ4EAHAAAAAA4YXV4QwAAAAB1cm46bXBlZzptcGVnQjpjaWNwOnN5c3RlbXM6YXV4aWxpYXJ5OmFscGhhAAAAAB1pcG1hAAAAAAAAAAIAAQOBAgMAAgSEAgOFAAAAGmlyZWYAAAAAAAAADmF1eGwAAgABAAEAAAPfbWRhdBIACgk4FW+9pAQ0GkAy4wUYgmMEAAGkAAAC3Uxb/n5+r6wQNNsD4ChVfcVjW8aJDoC9hnUCz1BImx1pC1cGHJGGaZi0J4/+8IlFk7Nc2CPV1P4t11P+ckjnI7f6nIKpMOBwuQNWe879KjtQBPnqEWkcdWAsM7O5L2bhCL/yYXq/Yn3B3XzaiUKEz5ieyyWCOvJxpaT1xDn0QAEy2d9TOGCgIqfbb1a9gnJsVEPdZCPpUaNWcXzJOn71N2N8lzhPkPTGwtHBFeYwkDTPKR0X6SKDrxQk4TrGO1IV+cISm7a3XDcv135VyHOw2CDCdhwcmrkLcppXwDqXaww/GmvUWNzvwPIDFFvwKebgw2AUGZlzct/aFHWQFAZ6TTsTBF//9ZlAx+Twv68wa3hG84qkDClpvt921MMWpF4fr5FnoqOUrQStd97rlvDYY7DYqANXFTzCkBv6aDmNwJByiXjr5QZGidzEPanwegqLSoRBhUFONZbgCxEKSBNHYRruxooVASFWg781DlQEh4XbaciANwD5rRWqYPvmSQwoG2S1kwNtyeqY/VCCfFkfG7GsWnIFuP9FXQs0/kY5jf9hYtlINganbvnocRlW6JyW8o7yQi8XDhPOY2wyQkiW2S41b56bF2/EG6jszVTDKrBCZJjh6S4OR2Ue6U9dw0AeDUiE18TFdcCJ28iB2wDN0AHxUo2Ky9tVPxC/idH2uLeDbnmj7kBm4S0R3K9WTcVK3iisHs5ViH+ThuTiBa91xwXRnk/TQJbsfu9W6TwZrFSldeRsqKX8jnNHEKYzanVcDYktB7KN8KGjiD+JaVWnaHCUtFVuVbOINJ+7IiE4EdpKNn4pupYFIKHNGIGN3TV8dvWgxterhtl1yQT3bHOWmQB+2c2Ue1EdlBHMeva+vCFkoehczIVMQoKmfDrg6Gvscyr1L0cheHkYlgu1emA8bQQzyzzAX0vXrJW15RBOldo95pUO8kxS5G7kSZEYufac35PmCIuaThhAEgAKBhgVb72FQDLXAUXAAABQ0oEWt/SZkCs7pRYTdf1GCszPVH9xdDFLhYBuT/t3j0PHcICxXaSKM6ZH7quzg2WM6oJAVeW0BTP0UM0LIZJKUa8kHTFeZQOrDven0G7BreJpHIrTmu90r6mCfwMz/LOVt0TkWCo74FyijFAOUCsx3hxStJzTkH0eQM2wdNynz1j0s9dtQwQoqE90dgUUfD869HF89q5nG3xtup/W/k1S+MIhL/4Zj2c5zDdDoXSQUaTklbwpWn/+u/xPNRSZ/NYqaCNFhhm8pIXm+Z/sBSU99bZg 1x, data:image/avif;base64,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 2x"
+              alt="Tony Lee"
+              width="48"
+              height="48"
+            />
+            <span class="text-regular-semibold color-neutral-darkest"
+              >Tony Lee</span
+            >
+          </figcaption>
+        </figure>
+      </li>
+      <li class="feedbacks__list-item">
+        <figure class="feedbacks__card">
+          <div class="feedbacks__rating" data-rating="5">
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+          </div>
+
+          <blockquote>
+            <p class="feedbacks__text">
+              "I absolutely love the variety of organic produce available here.
+              Everything is fresh and bursting with flavor!"
+            </p>
+          </blockquote>
+
+          <figcaption class="feedbacks__author">
+            <img
+              class="feedbacks__avatar"
+              loading="lazy"
+              decoding="async"
+              src="data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAAWBtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAADRpbG9jAAAAAERAAAIAAQAAAAABhAABAAAAAAAAAj8AAgAAAAADwwABAAAAAAAAAOQAAAA4aWluZgAAAAAAAgAAABVpbmZlAgAAAAABAABhdjAxAAAAABVpbmZlAgAAAAACAABhdjAxAAAAAA5waXRtAAAAAAABAAAAn2lwcnAAAAB6aXBjbwAAAAxhdjFDgSACAAAAABRpc3BlAAAAAAAAADAAAAAwAAAADnBpeGkAAAAAAQgAAAAMYXYxQ4EAHAAAAAA4YXV4QwAAAAB1cm46bXBlZzptcGVnQjpjaWNwOnN5c3RlbXM6YXV4aWxpYXJ5OmFscGhhAAAAAB1pcG1hAAAAAAAAAAIAAQOBAgMAAgSEAgOFAAAAGmlyZWYAAAAAAAAADmF1eGwAAgABAAEAAAMrbWRhdBIACgk4FW+9pAQ0GkAyrwQYgmMEDjunml0AACDdPAnKagwcYubdsSxQ7b0eL8POMr9xVXJTngI3kOPG3CxybkTapVQOcHU6qJ5ONPzgLkLSCM42kIT9c88cepMrPkwfBoTZ3kab9+QBhhnXrHDq5Zxn2B97d3cXOqYi+019cZ4a2i+cwEoqIKM+wbJjNZAHGdFER2fhUQDh4S4qR1kTx03Mfy0HvkzuHl1GKT6sQtyOqpdpRUnL77dDKRGDCtu56QARJYpZfDRJyT4/OalkW4Gxqt57UPXnd14jjtFcERTl7N6Z0HzjD79aFddLV3UKb3jWmQlym+RMz3DMPIY1smsOWmrm+0cNBy6kDjv99z/8ZeI+KcqRx9z5dl78kZRRfh5pbvLQ3bIp76QCbI4wIKTPofG33X8wGGUXwMCA+SbIX9BcLb1P/ZhkWJR1LbsL7g4qQGwoZP4GF+8LnB7L9YCwKZ4kx/hDdmxqsoHy0ITTatyEWGXId5ZbeduX/WeyQg9HTN/Fvw9idaT0eDOndT+Y7zpOtZ1iuWm49bCLGFcFPvov9frL32pxXWtSFLYeQ/katV2sw/63Ggj180K/cXJY1pdW3MVCCShi0lOD7L9z05UKob2JDtySLRmmr1B90jYbhuA3nw9kk+idVSWcgYp25TVMAKPPfgA8WORueKGNXCub/6CZgRDDWxvL70USAnCg7bDSfYRkXyx5bwW2bNRXaf3xKFGLBWUiEeHdGqU9EdpEf5T/7ZwCeORdfXbpEgAKBhgVb72FQDLXAUXAAABQ0oEWt/SZkCs7pRYTdf1GCszPVH9xdDFLhYBuT/t3j0PHcICxXaSKM6ZH7quzg2WM6oJAVeW0BTP0UM0LIZJKUa8kHTFeZQOrDven0G7BreJpHIrTmu90r6mCfwMz/LOVt0TkWCo74FyijFAOUCsx3hxStJzTkH0eQM2wdNynz1j0s9dtQwQoqE90dgUUfD869HF89q5nG3xtup/W/k1S+MIhL/4Zj2c5zDdDoXSQUaTklbwpWn/+u/xPNRSZ/NYqaCNFhhm8pIXm+Z/sBSU99bZg"
+              srcset="data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAAWBtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAADRpbG9jAAAAAERAAAIAAQAAAAABhAABAAAAAAAAAj8AAgAAAAADwwABAAAAAAAAAOQAAAA4aWluZgAAAAAAAgAAABVpbmZlAgAAAAABAABhdjAxAAAAABVpbmZlAgAAAAACAABhdjAxAAAAAA5waXRtAAAAAAABAAAAn2lwcnAAAAB6aXBjbwAAAAxhdjFDgSACAAAAABRpc3BlAAAAAAAAADAAAAAwAAAADnBpeGkAAAAAAQgAAAAMYXYxQ4EAHAAAAAA4YXV4QwAAAAB1cm46bXBlZzptcGVnQjpjaWNwOnN5c3RlbXM6YXV4aWxpYXJ5OmFscGhhAAAAAB1pcG1hAAAAAAAAAAIAAQOBAgMAAgSEAgOFAAAAGmlyZWYAAAAAAAAADmF1eGwAAgABAAEAAAMrbWRhdBIACgk4FW+9pAQ0GkAyrwQYgmMEDjunml0AACDdPAnKagwcYubdsSxQ7b0eL8POMr9xVXJTngI3kOPG3CxybkTapVQOcHU6qJ5ONPzgLkLSCM42kIT9c88cepMrPkwfBoTZ3kab9+QBhhnXrHDq5Zxn2B97d3cXOqYi+019cZ4a2i+cwEoqIKM+wbJjNZAHGdFER2fhUQDh4S4qR1kTx03Mfy0HvkzuHl1GKT6sQtyOqpdpRUnL77dDKRGDCtu56QARJYpZfDRJyT4/OalkW4Gxqt57UPXnd14jjtFcERTl7N6Z0HzjD79aFddLV3UKb3jWmQlym+RMz3DMPIY1smsOWmrm+0cNBy6kDjv99z/8ZeI+KcqRx9z5dl78kZRRfh5pbvLQ3bIp76QCbI4wIKTPofG33X8wGGUXwMCA+SbIX9BcLb1P/ZhkWJR1LbsL7g4qQGwoZP4GF+8LnB7L9YCwKZ4kx/hDdmxqsoHy0ITTatyEWGXId5ZbeduX/WeyQg9HTN/Fvw9idaT0eDOndT+Y7zpOtZ1iuWm49bCLGFcFPvov9frL32pxXWtSFLYeQ/katV2sw/63Ggj180K/cXJY1pdW3MVCCShi0lOD7L9z05UKob2JDtySLRmmr1B90jYbhuA3nw9kk+idVSWcgYp25TVMAKPPfgA8WORueKGNXCub/6CZgRDDWxvL70USAnCg7bDSfYRkXyx5bwW2bNRXaf3xKFGLBWUiEeHdGqU9EdpEf5T/7ZwCeORdfXbpEgAKBhgVb72FQDLXAUXAAABQ0oEWt/SZkCs7pRYTdf1GCszPVH9xdDFLhYBuT/t3j0PHcICxXaSKM6ZH7quzg2WM6oJAVeW0BTP0UM0LIZJKUa8kHTFeZQOrDven0G7BreJpHIrTmu90r6mCfwMz/LOVt0TkWCo74FyijFAOUCsx3hxStJzTkH0eQM2wdNynz1j0s9dtQwQoqE90dgUUfD869HF89q5nG3xtup/W/k1S+MIhL/4Zj2c5zDdDoXSQUaTklbwpWn/+u/xPNRSZ/NYqaCNFhhm8pIXm+Z/sBSU99bZg 1x, data:image/avif;base64,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 2x"
+              alt="Emily Johnson"
+              width="48"
+              height="48"
+            />
+            <span class="text-regular-semibold color-neutral-darkest"
+              >Emily Johnson</span
+            >
+          </figcaption>
+        </figure>
+      </li>
+      <li class="feedbacks__list-item">
+        <figure class="feedbacks__card">
+          <div class="feedbacks__rating" data-rating="4">
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star"></use>
+            </svg>
+          </div>
+
+          <blockquote>
+            <p class="feedbacks__text">
+              "The staff is incredibly knowledgeable and always willing to help
+              me find what I need. Great service!"
+            </p>
+          </blockquote>
+
+          <figcaption class="feedbacks__author">
+            <img
+              class="feedbacks__avatar"
+              loading="lazy"
+              decoding="async"
+              src="data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAAWBtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAADRpbG9jAAAAAERAAAIAAQAAAAABhAABAAAAAAAAAgEAAgAAAAADhQABAAAAAAAAAOQAAAA4aWluZgAAAAAAAgAAABVpbmZlAgAAAAABAABhdjAxAAAAABVpbmZlAgAAAAACAABhdjAxAAAAAA5waXRtAAAAAAABAAAAn2lwcnAAAAB6aXBjbwAAAAxhdjFDgSACAAAAABRpc3BlAAAAAAAAADAAAAAwAAAADnBpeGkAAAAAAQgAAAAMYXYxQ4EAHAAAAAA4YXV4QwAAAAB1cm46bXBlZzptcGVnQjpjaWNwOnN5c3RlbXM6YXV4aWxpYXJ5OmFscGhhAAAAAB1pcG1hAAAAAAAAAAIAAQOBAgMAAgSEAgOFAAAAGmlyZWYAAAAAAAAADmF1eGwAAgABAAEAAALtbWRhdBIACgk4FW+9pAQ0GkAy8QMYgmMEHnnHml0AACDdO/2AfpRn3o7dyYwZ3VkbubvYICmuNDgIbRcoTFZu+gsgM96aqo7NoO5Lv/jZWcsywDkjblZTcyhKqIehTYWd+8YyJZZpeUAGUDnqlpcH5ffNI9ieuOvruomO+z+BH8/fzKHgZAf1DMyWqYFks0hErxKfyEXfJGCbbUyJVLnAFEYCJ2GML65cJxHsQNBa9MadkFpZKgCFqdrpMRDXCaNBzx6OS4Z9caoJ+5w8N1Mxm4xfUP+ZE8PvUMCDinBDFGkz4YdXQlU1eS5+FDxlQAb+cpSQdojbZFS/ojcDiqndQ6C/S5QU24wl6NmYFPBQDOED85LyMALMguz+GvlKk6KUGJWv41o8saHG+TCAanS/qUbyM3uCKDp1VOZJrKkeTW7ecH3XPEVduysm/T/IEprD/42HLoJxJS/1WLep09prb07U5/Qp05ivyKJTMDM4XZKDOmAJwlWGVACyI1JegMHNP3EUTx+U9CKFDsLVyocK8ZucdDe9NdgAv0FPl2PXcqwTkVNYb/9BereMfevVpdhT+ZFZpZQ70y15uQTc/+UriaU2w1K3E1pP98Mx90bllceqcHEqck+M9WbLZF7jrwnUDUYC2O7z1wrr6HEzsvonxKa2blsXjN0z/q77KXF/a4SY7jG0sBIACgYYFW+9hUAy1wFFwAAAUNKBFrf0mZArO6UWE3X9RgrMz1R/cXQxS4WAbk/7d49Dx3CAsV2kijOmR+6rs4NljOqCQFXltAUz9FDNCyGSSlGvJB0xXmUDqw73p9Buwa3iaRyK05rvdK+pgn8DM/yzlbdE5FgqO+BcooxQDlArMd4cUrSc05B9HkDNsHTcp89Y9LPXbUMEKKhPdHYFFHw/OvRxfPauZxt8bbqf1v5NUvjCIS/+GY9nOcw3Q6F0kFGk5JW8KVp//rv8TzUUmfzWKmgjRYYZvKSF5vmf7AUlPfW2YA=="
+              srcset="data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAAWBtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAADRpbG9jAAAAAERAAAIAAQAAAAABhAABAAAAAAAAAgEAAgAAAAADhQABAAAAAAAAAOQAAAA4aWluZgAAAAAAAgAAABVpbmZlAgAAAAABAABhdjAxAAAAABVpbmZlAgAAAAACAABhdjAxAAAAAA5waXRtAAAAAAABAAAAn2lwcnAAAAB6aXBjbwAAAAxhdjFDgSACAAAAABRpc3BlAAAAAAAAADAAAAAwAAAADnBpeGkAAAAAAQgAAAAMYXYxQ4EAHAAAAAA4YXV4QwAAAAB1cm46bXBlZzptcGVnQjpjaWNwOnN5c3RlbXM6YXV4aWxpYXJ5OmFscGhhAAAAAB1pcG1hAAAAAAAAAAIAAQOBAgMAAgSEAgOFAAAAGmlyZWYAAAAAAAAADmF1eGwAAgABAAEAAALtbWRhdBIACgk4FW+9pAQ0GkAy8QMYgmMEHnnHml0AACDdO/2AfpRn3o7dyYwZ3VkbubvYICmuNDgIbRcoTFZu+gsgM96aqo7NoO5Lv/jZWcsywDkjblZTcyhKqIehTYWd+8YyJZZpeUAGUDnqlpcH5ffNI9ieuOvruomO+z+BH8/fzKHgZAf1DMyWqYFks0hErxKfyEXfJGCbbUyJVLnAFEYCJ2GML65cJxHsQNBa9MadkFpZKgCFqdrpMRDXCaNBzx6OS4Z9caoJ+5w8N1Mxm4xfUP+ZE8PvUMCDinBDFGkz4YdXQlU1eS5+FDxlQAb+cpSQdojbZFS/ojcDiqndQ6C/S5QU24wl6NmYFPBQDOED85LyMALMguz+GvlKk6KUGJWv41o8saHG+TCAanS/qUbyM3uCKDp1VOZJrKkeTW7ecH3XPEVduysm/T/IEprD/42HLoJxJS/1WLep09prb07U5/Qp05ivyKJTMDM4XZKDOmAJwlWGVACyI1JegMHNP3EUTx+U9CKFDsLVyocK8ZucdDe9NdgAv0FPl2PXcqwTkVNYb/9BereMfevVpdhT+ZFZpZQ70y15uQTc/+UriaU2w1K3E1pP98Mx90bllceqcHEqck+M9WbLZF7jrwnUDUYC2O7z1wrr6HEzsvonxKa2blsXjN0z/q77KXF/a4SY7jG0sBIACgYYFW+9hUAy1wFFwAAAUNKBFrf0mZArO6UWE3X9RgrMz1R/cXQxS4WAbk/7d49Dx3CAsV2kijOmR+6rs4NljOqCQFXltAUz9FDNCyGSSlGvJB0xXmUDqw73p9Buwa3iaRyK05rvdK+pgn8DM/yzlbdE5FgqO+BcooxQDlArMd4cUrSc05B9HkDNsHTcp89Y9LPXbUMEKKhPdHYFFHw/OvRxfPauZxt8bbqf1v5NUvjCIS/+GY9nOcw3Q6F0kFGk5JW8KVp//rv8TzUUmfzWKmgjRYYZvKSF5vmf7AUlPfW2YA== 1x, data:image/avif;base64,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 2x"
+              alt="Michael Smith"
+              width="48"
+              height="48"
+            />
+            <span class="text-regular-semibold color-neutral-darkest"
+              >Michael Smith</span
+            >
+          </figcaption>
+        </figure>
+      </li>
+      <li class="feedbacks__list-item">
+        <figure class="feedbacks__card">
+          <div class="feedbacks__rating" data-rating="5">
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+          </div>
+
+          <blockquote>
+            <p class="feedbacks__text">
+              "I've noticed a significant improvement in my health since
+              switching to their organic products. Highly recommend!"
+            </p>
+          </blockquote>
+
+          <figcaption class="feedbacks__author">
+            <img
+              class="feedbacks__avatar"
+              loading="lazy"
+              decoding="async"
+              src="data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAAWBtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAADRpbG9jAAAAAERAAAIAAQAAAAABhAABAAAAAAAAApUAAgAAAAAEGQABAAAAAAAAAOQAAAA4aWluZgAAAAAAAgAAABVpbmZlAgAAAAABAABhdjAxAAAAABVpbmZlAgAAAAACAABhdjAxAAAAAA5waXRtAAAAAAABAAAAn2lwcnAAAAB6aXBjbwAAAAxhdjFDgSACAAAAABRpc3BlAAAAAAAAADAAAAAwAAAADnBpeGkAAAAAAQgAAAAMYXYxQ4EAHAAAAAA4YXV4QwAAAAB1cm46bXBlZzptcGVnQjpjaWNwOnN5c3RlbXM6YXV4aWxpYXJ5OmFscGhhAAAAAB1pcG1hAAAAAAAAAAIAAQOBAgMAAgSEAgOFAAAAGmlyZWYAAAAAAAAADmF1eGwAAgABAAEAAAOBbWRhdBIACgk4FW+9pAQ0GkAyhQUYgmMEHHGrGl0AACDdNxxb6cRVcinfaFh/CEhtRRw7WY3Ie9dRvlxEKDsz+dvWlf4XCdtjdD5J5Til40aIFzpM+sbO3407GJS4TVwIRWSGuS3ajCwAVSsFKVeQXLU2+l/DjRkz9xRahdlr/PG/nXf9auZ28yDCIk1GO1qmwGQSIXz0VLMhowG2VNgFgVWIr0gM+xUHbVgDsndPvNsQr8tuomWsBpre7W8kd0G+PzuBNBRYbb+93P2cdqfrc/nfpC36+Jy+K0hwZHZ9DvJIyWzjLORWSK1IxRhNnFuREw9B6lzZwLcxl04i0qGqyC84/PkBbti/UJhRgZJfmeGRlHagrK5B9TXG/QhguNpweJ8K3nQcBczojCo/CHOdcBJMUlYSMvX+BPcJ7eO5sEmKkAzzBnabyc+n26BXJcFMLlfJhHeh5rI/3NzY+9ydt1DA2Aln4IwTXjrHU1SxvwMt0qucW1NyKpyQd1kBNM9kuYiHwpU9DM+p+Ez4W6afUMlFAizXu6wymB/au/P0xVQujaoqb0STfGHjmAtp0KvnWV+e5wk2uXvRD4oXX2SYfu9jUM9YApWXboUqkpKPzwReZu6ebW0GApCqIEwtFa6qTqG6Fby40V7f6wtkSOpJpKUdG0IV0HADHbeSTyMJmGUUnJqqdYSRddnQP9DholP+pTxJ7LomQXbTC4Fp2VdqsxegQPo0YnZqYpqnH9qmX+AefW97nFzgYm6il+IAcBZ7VIxC+6tQHSYmYWhzv5GAoOnQp6J003Xoi1bMAFHHmVPuQd0ELK/SRUKohehlMICaqsM9TxoYb4tD8VZxK3qdMAZBU2W/w/1U0eyU3iohO5jWjJ6obCtpm0ASAAoGGBVvvYVAMtcBRcAAAFDSgRa39JmQKzulFhN1/UYKzM9Uf3F0MUuFgG5P+3ePQ8dwgLFdpIozpkfuq7ODZYzqgkBV5bQFM/RQzQshkkpRryQdMV5lA6sO96fQbsGt4mkcitOa73SvqYJ/AzP8s5W3RORYKjvgXKKMUA5QKzHeHFK0nNOQfR5AzbB03KfPWPSz121DBCioT3R2BRR8Pzr0cXz2rmcbfG26n9b+TVL4wiEv/hmPZznMN0OhdJBRpOSVvClaf/67/E81FJn81ipoI0WGGbykheb5n+wFJT31tmA="
+              srcset="data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAAWBtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAADRpbG9jAAAAAERAAAIAAQAAAAABhAABAAAAAAAAApUAAgAAAAAEGQABAAAAAAAAAOQAAAA4aWluZgAAAAAAAgAAABVpbmZlAgAAAAABAABhdjAxAAAAABVpbmZlAgAAAAACAABhdjAxAAAAAA5waXRtAAAAAAABAAAAn2lwcnAAAAB6aXBjbwAAAAxhdjFDgSACAAAAABRpc3BlAAAAAAAAADAAAAAwAAAADnBpeGkAAAAAAQgAAAAMYXYxQ4EAHAAAAAA4YXV4QwAAAAB1cm46bXBlZzptcGVnQjpjaWNwOnN5c3RlbXM6YXV4aWxpYXJ5OmFscGhhAAAAAB1pcG1hAAAAAAAAAAIAAQOBAgMAAgSEAgOFAAAAGmlyZWYAAAAAAAAADmF1eGwAAgABAAEAAAOBbWRhdBIACgk4FW+9pAQ0GkAyhQUYgmMEHHGrGl0AACDdNxxb6cRVcinfaFh/CEhtRRw7WY3Ie9dRvlxEKDsz+dvWlf4XCdtjdD5J5Til40aIFzpM+sbO3407GJS4TVwIRWSGuS3ajCwAVSsFKVeQXLU2+l/DjRkz9xRahdlr/PG/nXf9auZ28yDCIk1GO1qmwGQSIXz0VLMhowG2VNgFgVWIr0gM+xUHbVgDsndPvNsQr8tuomWsBpre7W8kd0G+PzuBNBRYbb+93P2cdqfrc/nfpC36+Jy+K0hwZHZ9DvJIyWzjLORWSK1IxRhNnFuREw9B6lzZwLcxl04i0qGqyC84/PkBbti/UJhRgZJfmeGRlHagrK5B9TXG/QhguNpweJ8K3nQcBczojCo/CHOdcBJMUlYSMvX+BPcJ7eO5sEmKkAzzBnabyc+n26BXJcFMLlfJhHeh5rI/3NzY+9ydt1DA2Aln4IwTXjrHU1SxvwMt0qucW1NyKpyQd1kBNM9kuYiHwpU9DM+p+Ez4W6afUMlFAizXu6wymB/au/P0xVQujaoqb0STfGHjmAtp0KvnWV+e5wk2uXvRD4oXX2SYfu9jUM9YApWXboUqkpKPzwReZu6ebW0GApCqIEwtFa6qTqG6Fby40V7f6wtkSOpJpKUdG0IV0HADHbeSTyMJmGUUnJqqdYSRddnQP9DholP+pTxJ7LomQXbTC4Fp2VdqsxegQPo0YnZqYpqnH9qmX+AefW97nFzgYm6il+IAcBZ7VIxC+6tQHSYmYWhzv5GAoOnQp6J003Xoi1bMAFHHmVPuQd0ELK/SRUKohehlMICaqsM9TxoYb4tD8VZxK3qdMAZBU2W/w/1U0eyU3iohO5jWjJ6obCtpm0ASAAoGGBVvvYVAMtcBRcAAAFDSgRa39JmQKzulFhN1/UYKzM9Uf3F0MUuFgG5P+3ePQ8dwgLFdpIozpkfuq7ODZYzqgkBV5bQFM/RQzQshkkpRryQdMV5lA6sO96fQbsGt4mkcitOa73SvqYJ/AzP8s5W3RORYKjvgXKKMUA5QKzHeHFK0nNOQfR5AzbB03KfPWPSz121DBCioT3R2BRR8Pzr0cXz2rmcbfG26n9b+TVL4wiEv/hmPZznMN0OhdJBRpOSVvClaf/67/E81FJn81ipoI0WGGbykheb5n+wFJT31tmA= 1x, data:image/avif;base64,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 2x"
+              alt="Sarah Davis"
+              width="48"
+              height="48"
+            />
+            <span class="text-regular-semibold color-neutral-darkest"
+              >Sarah Davis</span
+            >
+          </figcaption>
+        </figure>
+      </li>
+      <li class="feedbacks__list-item">
+        <figure class="feedbacks__card">
+          <div class="feedbacks__rating" data-rating="3">
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star"></use>
+            </svg>
+          </div>
+
+          <blockquote>
+            <p class="feedbacks__text">
+              "The range of organic snacks is fantastic! Perfect for my kids,
+              who love them and I feel good about giving them healthy options."
+            </p>
+          </blockquote>
+
+          <figcaption class="feedbacks__author">
+            <img
+              class="feedbacks__avatar"
+              loading="lazy"
+              decoding="async"
+              src="data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAAWBtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAADRpbG9jAAAAAERAAAIAAQAAAAABhAABAAAAAAAAAnYAAgAAAAAD+gABAAAAAAAAAOQAAAA4aWluZgAAAAAAAgAAABVpbmZlAgAAAAABAABhdjAxAAAAABVpbmZlAgAAAAACAABhdjAxAAAAAA5waXRtAAAAAAABAAAAn2lwcnAAAAB6aXBjbwAAAAxhdjFDgSACAAAAABRpc3BlAAAAAAAAADAAAAAwAAAADnBpeGkAAAAAAQgAAAAMYXYxQ4EAHAAAAAA4YXV4QwAAAAB1cm46bXBlZzptcGVnQjpjaWNwOnN5c3RlbXM6YXV4aWxpYXJ5OmFscGhhAAAAAB1pcG1hAAAAAAAAAAIAAQOBAgMAAgSEAgOFAAAAGmlyZWYAAAAAAAAADmF1eGwAAgABAAEAAANibWRhdBIACgk4FW+9pAQ0GkAy5gQYgmMEKqnqml0AACDdO25hEuhumpY4Hn2dNObpzwYmaWLVUnL/sptO9CEr5pPpQ3xHSJbLxKXxqHiL4MQg315yHm0cynVpbE6NuTE5ZCmHsfvS8Clu1vRqxrbDNrCjLdE0YnPcNLxctRe3vGtNv1UH+3JbGm8D5rMv8hCjQ44XibDw1jyEHbT8a/mJ82ing1ytpLxsQbBtgd8fQ+iTfVvpqS7cEOEJE+Orbq6MXB3lxOd7kagvPImVk4JSsuZJ+/27x2ks1o8S9Otm0KlfR6zfjsXlMQ/xrFjFCC9jNqbRbhh3N+DvgD56OMddkIXMT8O1otwps8q91DpZP1ditFiy0rrnmpcLIPzW0qpP8tArYOlfOXcFQfMWAJmAL5FbZWEz1kJdKMQAmVPpnnTl3LePqFoND5OdnSR+SzWekswRWhNAGxwGAbamhCelbFkbWY1OdKMF6vMPX8/YvHiaZvx7nCiH+KMW8qXOFYhTl/XNVBVlm9/WqU56i545pYQHcF2Tjn/xEnmBJRN76vyxub4J1xgovf9c2W6dq65JQNubjFM/D83g2+aoiXjktUtlu3jmurxZbhLTopcd1h7aMsOACzxoTGyFxmdegOuQ9t4rGC0wf03KssDAyT4sY7E2yZM6Jhh/XvjmsZMqFC9h2Xyz8hRr6l/mmmW9o/+fAXr5VpN3YJfDs8kx1CGbQ+vHGdrSN0Zl1Ms4dnc07Uf9VDehJBPsysVramnH6xduy0JGRpEr6J+VysYWImjP++Nfxshom7xMx3NcAEgpruni8UkZmqZZhuLJHawMpIqCv0nYfOjoW3MboBIACgYYFW+9hUAy1wFFwAAAUNKBFrf0mZArO6UWE3X9RgrMz1R/cXQxS4WAbk/7d49Dx3CAsV2kijOmR+6rs4NljOqCQFXltAUz9FDNCyGSSlGvJB0xXmUDqw73p9Buwa3iaRyK05rvdK+pgn8DM/yzlbdE5FgqO+BcooxQDlArMd4cUrSc05B9HkDNsHTcp89Y9LPXbUMEKKhPdHYFFHw/OvRxfPauZxt8bbqf1v5NUvjCIS/+GY9nOcw3Q6F0kFGk5JW8KVp//rv8TzUUmfzWKmgjRYYZvKSF5vmf7AUlPfW2YA=="
+              srcset="data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAAWBtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAADRpbG9jAAAAAERAAAIAAQAAAAABhAABAAAAAAAAAnYAAgAAAAAD+gABAAAAAAAAAOQAAAA4aWluZgAAAAAAAgAAABVpbmZlAgAAAAABAABhdjAxAAAAABVpbmZlAgAAAAACAABhdjAxAAAAAA5waXRtAAAAAAABAAAAn2lwcnAAAAB6aXBjbwAAAAxhdjFDgSACAAAAABRpc3BlAAAAAAAAADAAAAAwAAAADnBpeGkAAAAAAQgAAAAMYXYxQ4EAHAAAAAA4YXV4QwAAAAB1cm46bXBlZzptcGVnQjpjaWNwOnN5c3RlbXM6YXV4aWxpYXJ5OmFscGhhAAAAAB1pcG1hAAAAAAAAAAIAAQOBAgMAAgSEAgOFAAAAGmlyZWYAAAAAAAAADmF1eGwAAgABAAEAAANibWRhdBIACgk4FW+9pAQ0GkAy5gQYgmMEKqnqml0AACDdO25hEuhumpY4Hn2dNObpzwYmaWLVUnL/sptO9CEr5pPpQ3xHSJbLxKXxqHiL4MQg315yHm0cynVpbE6NuTE5ZCmHsfvS8Clu1vRqxrbDNrCjLdE0YnPcNLxctRe3vGtNv1UH+3JbGm8D5rMv8hCjQ44XibDw1jyEHbT8a/mJ82ing1ytpLxsQbBtgd8fQ+iTfVvpqS7cEOEJE+Orbq6MXB3lxOd7kagvPImVk4JSsuZJ+/27x2ks1o8S9Otm0KlfR6zfjsXlMQ/xrFjFCC9jNqbRbhh3N+DvgD56OMddkIXMT8O1otwps8q91DpZP1ditFiy0rrnmpcLIPzW0qpP8tArYOlfOXcFQfMWAJmAL5FbZWEz1kJdKMQAmVPpnnTl3LePqFoND5OdnSR+SzWekswRWhNAGxwGAbamhCelbFkbWY1OdKMF6vMPX8/YvHiaZvx7nCiH+KMW8qXOFYhTl/XNVBVlm9/WqU56i545pYQHcF2Tjn/xEnmBJRN76vyxub4J1xgovf9c2W6dq65JQNubjFM/D83g2+aoiXjktUtlu3jmurxZbhLTopcd1h7aMsOACzxoTGyFxmdegOuQ9t4rGC0wf03KssDAyT4sY7E2yZM6Jhh/XvjmsZMqFC9h2Xyz8hRr6l/mmmW9o/+fAXr5VpN3YJfDs8kx1CGbQ+vHGdrSN0Zl1Ms4dnc07Uf9VDehJBPsysVramnH6xduy0JGRpEr6J+VysYWImjP++Nfxshom7xMx3NcAEgpruni8UkZmqZZhuLJHawMpIqCv0nYfOjoW3MboBIACgYYFW+9hUAy1wFFwAAAUNKBFrf0mZArO6UWE3X9RgrMz1R/cXQxS4WAbk/7d49Dx3CAsV2kijOmR+6rs4NljOqCQFXltAUz9FDNCyGSSlGvJB0xXmUDqw73p9Buwa3iaRyK05rvdK+pgn8DM/yzlbdE5FgqO+BcooxQDlArMd4cUrSc05B9HkDNsHTcp89Y9LPXbUMEKKhPdHYFFHw/OvRxfPauZxt8bbqf1v5NUvjCIS/+GY9nOcw3Q6F0kFGk5JW8KVp//rv8TzUUmfzWKmgjRYYZvKSF5vmf7AUlPfW2YA== 1x, data:image/avif;base64,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 2x"
+              alt="David Brown"
+              width="48"
+              height="48"
+            />
+            <span class="text-regular-semibold color-neutral-darkest"
+              >David Brown</span
+            >
+          </figcaption>
+        </figure>
+      </li>
+      <li class="feedbacks__list-item">
+        <figure class="feedbacks__card">
+          <div class="feedbacks__rating" data-rating="4">
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star"></use>
+            </svg>
+          </div>
+
+          <blockquote>
+            <p class="feedbacks__text">
+              "I appreciate that they source local ingredients. It makes me feel
+              connected to the community!"
+            </p>
+          </blockquote>
+
+          <figcaption class="feedbacks__author">
+            <img
+              class="feedbacks__avatar"
+              loading="lazy"
+              decoding="async"
+              src="data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAAWBtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAADRpbG9jAAAAAERAAAIAAQAAAAABhAABAAAAAAAAAzIAAgAAAAAEtgABAAAAAAAAAOQAAAA4aWluZgAAAAAAAgAAABVpbmZlAgAAAAABAABhdjAxAAAAABVpbmZlAgAAAAACAABhdjAxAAAAAA5waXRtAAAAAAABAAAAn2lwcnAAAAB6aXBjbwAAAAxhdjFDgSACAAAAABRpc3BlAAAAAAAAADAAAAAwAAAADnBpeGkAAAAAAQgAAAAMYXYxQ4EAHAAAAAA4YXV4QwAAAAB1cm46bXBlZzptcGVnQjpjaWNwOnN5c3RlbXM6YXV4aWxpYXJ5OmFscGhhAAAAAB1pcG1hAAAAAAAAAAIAAQOBAgMAAgSEAgOFAAAAGmlyZWYAAAAAAAAADmF1eGwAAgABAAEAAAQebWRhdBIACgk4FW+9pAQ0GkAyogYYgmMEIojumkAAACDdP3qyrOSGtqWT/voUrywTtCxD5E5esp290prGHf6X7UZYv/2Bv+zYakgfKI+rJ+X7c0KQBq8//9O1pP5AXvg5GMRZ88CPrPCv/BbucjxH1xUuEuEmtYLEaPONiGDjp7hhiNlJUJr5GAg/1ixW7MZSpt0l37weWANcVM+dRb4+GB1CpqjdtEEFhw/dgIbGyHLAAi2vvzcyC4JVVJ9fmzSq02ErM8PfQDqURIY/ocDpIiwRkDNzX16USoWTWKeKRHxgf5wedGx+6t5wd5ufN06lZJZe1Ffpd9/GyzfFnbgZvi6WHc3h3sctHn+1EtKeGBAPaUeMIMs+JY5JAOw2HMBW/WkgDHQteoIUdZVDykhvl+kukGWaO54zW/iTO32o2xBIzbnQfG5PBh0bDXVrPFE7IJyUws8FaA/7QAtJFMvnf/+zHAmvH4naLUYMeM5yw8UsRjDCz567M2zVy6C9frFcAscxsKC/k3mQtSu0SWOvvSNgZnwYM1dwomraTniY7srIqkvw14xTxLsdRsQ/VuwcSsGWC0WRVar1SUXA+Lpq1jOhMV470qHlCXLBzWR8Tkn1zexTIXdZ2dwG6a0qHwSZIR2VWXoD7bZf+oxVpt6zZpXCDY7m+YB94AevNlotHMx5dpK2kxbfBDTyxAnod10UjAYsFq2zPvidWbYm5JK/uTuIH3rU9tKgL6xjBTZ5tYyaJe9tDDeE+sk8RMnTJbuC8UeLw9q2XNjLcboVCNRKuIIlvb1NwD/IgIPZX9vJcahwiigaDT7LkAAJs1ZN/7TQr29SLMh9oSTlo0sICTb8jZYMBN6jbSwbBzoQhhHQPTcApxtVQNXE9h0/rhw+UblqOfCsAe7p+PJM9OElEsSrfU0qcAvmzNPLTSq3zOYeDdKsjc46Ehyf8h/2W/8DyD1JA+edtP4nTfejgF9VVthEwMCbrnftJEA5iYhC66CCTkTY4uDzpwLrOgh3QWQzwzXcL1QbfXyqlKwj6wB+nh3R7rX30BZg2U6WyHECHx30ZNPl0m08QPUV09y0LMeWiwl0BuzWWk9gEgAKBhgVb72FQDLXAUXAAABQ0oEWt/SZkCs7pRYTdf1GCszPVH9xdDFLhYBuT/t3j0PHcICxXaSKM6ZH7quzg2WM6oJAVeW0BTP0UM0LIZJKUa8kHTFeZQOrDven0G7BreJpHIrTmu90r6mCfwMz/LOVt0TkWCo74FyijFAOUCsx3hxStJzTkH0eQM2wdNynz1j0s9dtQwQoqE90dgUUfD869HF89q5nG3xtup/W/k1S+MIhL/4Zj2c5zDdDoXSQUaTklbwpWn/+u/xPNRSZ/NYqaCNFhhm8pIXm+Z/sBSU99bZg"
+              srcset="data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAAWBtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAADRpbG9jAAAAAERAAAIAAQAAAAABhAABAAAAAAAAAzIAAgAAAAAEtgABAAAAAAAAAOQAAAA4aWluZgAAAAAAAgAAABVpbmZlAgAAAAABAABhdjAxAAAAABVpbmZlAgAAAAACAABhdjAxAAAAAA5waXRtAAAAAAABAAAAn2lwcnAAAAB6aXBjbwAAAAxhdjFDgSACAAAAABRpc3BlAAAAAAAAADAAAAAwAAAADnBpeGkAAAAAAQgAAAAMYXYxQ4EAHAAAAAA4YXV4QwAAAAB1cm46bXBlZzptcGVnQjpjaWNwOnN5c3RlbXM6YXV4aWxpYXJ5OmFscGhhAAAAAB1pcG1hAAAAAAAAAAIAAQOBAgMAAgSEAgOFAAAAGmlyZWYAAAAAAAAADmF1eGwAAgABAAEAAAQebWRhdBIACgk4FW+9pAQ0GkAyogYYgmMEIojumkAAACDdP3qyrOSGtqWT/voUrywTtCxD5E5esp290prGHf6X7UZYv/2Bv+zYakgfKI+rJ+X7c0KQBq8//9O1pP5AXvg5GMRZ88CPrPCv/BbucjxH1xUuEuEmtYLEaPONiGDjp7hhiNlJUJr5GAg/1ixW7MZSpt0l37weWANcVM+dRb4+GB1CpqjdtEEFhw/dgIbGyHLAAi2vvzcyC4JVVJ9fmzSq02ErM8PfQDqURIY/ocDpIiwRkDNzX16USoWTWKeKRHxgf5wedGx+6t5wd5ufN06lZJZe1Ffpd9/GyzfFnbgZvi6WHc3h3sctHn+1EtKeGBAPaUeMIMs+JY5JAOw2HMBW/WkgDHQteoIUdZVDykhvl+kukGWaO54zW/iTO32o2xBIzbnQfG5PBh0bDXVrPFE7IJyUws8FaA/7QAtJFMvnf/+zHAmvH4naLUYMeM5yw8UsRjDCz567M2zVy6C9frFcAscxsKC/k3mQtSu0SWOvvSNgZnwYM1dwomraTniY7srIqkvw14xTxLsdRsQ/VuwcSsGWC0WRVar1SUXA+Lpq1jOhMV470qHlCXLBzWR8Tkn1zexTIXdZ2dwG6a0qHwSZIR2VWXoD7bZf+oxVpt6zZpXCDY7m+YB94AevNlotHMx5dpK2kxbfBDTyxAnod10UjAYsFq2zPvidWbYm5JK/uTuIH3rU9tKgL6xjBTZ5tYyaJe9tDDeE+sk8RMnTJbuC8UeLw9q2XNjLcboVCNRKuIIlvb1NwD/IgIPZX9vJcahwiigaDT7LkAAJs1ZN/7TQr29SLMh9oSTlo0sICTb8jZYMBN6jbSwbBzoQhhHQPTcApxtVQNXE9h0/rhw+UblqOfCsAe7p+PJM9OElEsSrfU0qcAvmzNPLTSq3zOYeDdKsjc46Ehyf8h/2W/8DyD1JA+edtP4nTfejgF9VVthEwMCbrnftJEA5iYhC66CCTkTY4uDzpwLrOgh3QWQzwzXcL1QbfXyqlKwj6wB+nh3R7rX30BZg2U6WyHECHx30ZNPl0m08QPUV09y0LMeWiwl0BuzWWk9gEgAKBhgVb72FQDLXAUXAAABQ0oEWt/SZkCs7pRYTdf1GCszPVH9xdDFLhYBuT/t3j0PHcICxXaSKM6ZH7quzg2WM6oJAVeW0BTP0UM0LIZJKUa8kHTFeZQOrDven0G7BreJpHIrTmu90r6mCfwMz/LOVt0TkWCo74FyijFAOUCsx3hxStJzTkH0eQM2wdNynz1j0s9dtQwQoqE90dgUUfD869HF89q5nG3xtup/W/k1S+MIhL/4Zj2c5zDdDoXSQUaTklbwpWn/+u/xPNRSZ/NYqaCNFhhm8pIXm+Z/sBSU99bZg 1x, data:image/avif;base64,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 2x"
+              alt="Jessica Wilson"
+              width="48"
+              height="48"
+            />
+            <span class="text-regular-semibold color-neutral-darkest"
+              >Jessica Wilson</span
+            >
+          </figcaption>
+        </figure>
+      </li>
+      <li class="feedbacks__list-item">
+        <figure class="feedbacks__card">
+          <div class="feedbacks__rating" data-rating="3">
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star"></use>
+            </svg>
+          </div>
+
+          <blockquote>
+            <p class="feedbacks__text">
+              "The prices are fair for the quality of food. I never feel guilty
+              about spending a little more here."
+            </p>
+          </blockquote>
+
+          <figcaption class="feedbacks__author">
+            <img
+              class="feedbacks__avatar"
+              loading="lazy"
+              decoding="async"
+              src="data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAAWBtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAADRpbG9jAAAAAERAAAIAAQAAAAABhAABAAAAAAAAAnsAAgAAAAAD/wABAAAAAAAAAOQAAAA4aWluZgAAAAAAAgAAABVpbmZlAgAAAAABAABhdjAxAAAAABVpbmZlAgAAAAACAABhdjAxAAAAAA5waXRtAAAAAAABAAAAn2lwcnAAAAB6aXBjbwAAAAxhdjFDgSACAAAAABRpc3BlAAAAAAAAADAAAAAwAAAADnBpeGkAAAAAAQgAAAAMYXYxQ4EAHAAAAAA4YXV4QwAAAAB1cm46bXBlZzptcGVnQjpjaWNwOnN5c3RlbXM6YXV4aWxpYXJ5OmFscGhhAAAAAB1pcG1hAAAAAAAAAAIAAQOBAgMAAgSEAgOFAAAAGmlyZWYAAAAAAAAADmF1eGwAAgABAAEAAANnbWRhdBIACgk4FW+9pAQ0GkAy6wQYgmMEEknIml0AACDdK/hPdc7rMT3ny+7g+2JKo05YjdQcC5wN/eiqtx2W6wWL90kYwytXymP/7DV6xwUEP8DKfqHsx76cfy2IUzFuSpes5rLn62QkMSfrqdDNtYCxRKbHfdYFcak7U7pyXrK98Myf81afYWvWVZpLpkTDfeSFcyf/OqE2KFFnMvmT+UKQM+wKZdxnJdDajXYeTu/5TgwCNtjZyUANrjvMFG5bgaYsl4FceFxiM+4LlFoLJ7J/S1erYxi2NOw4wpffBLGwt56k9STsBxExJiwWt7aftVvEYYTtIcCxp51ahl3Sl3l+hF3hahdrMd1564k4X4uoCImQiuKPVwn8LjrKQxFt4dO5nbSt4//m9OzOp66JaSkCvVtxn6IghanntKdjRiaAWWTOGINzbo8OMCzg9Aj4vuuemRNOVDallJTJ9iO6aXfeztcXLuWJyLnUe7OJmOxxDFQfRWUbggPZe/sy6dcDTz4metvTK2x4vjawylHScXjLoAL+dUQ8y/RAv+cXXNoJOG1PbHkL5AjHFhiAOv3s1SfdjQ848NpCa2wPVH1Jz2BoriO8/AqUigS35SsuBtfrsZUkrKyA3OWM3b+FZXG0Hip+fIJXjg0NH3B5Oe8adm7uizXHnfje7x+5ZK4YC8u7Tq7Jwo6q97ARNonXZuS/zHdy8amdUUwv6b6qX+3L1/1IuJMOIrp6wtJqKNLEIDtO9YvqhhPXWJCi01SCKd7FHN3VJktcMtCghs9cInG43DS+jSmbvQWl7UAlCFszLnXKe+GNaAyzdHrGBilxmBjPsaZ93N5CSCeifjOFKqBIEgAKBhgVb72FQDLXAUXAAABQ0oEWt/SZkCs7pRYTdf1GCszPVH9xdDFLhYBuT/t3j0PHcICxXaSKM6ZH7quzg2WM6oJAVeW0BTP0UM0LIZJKUa8kHTFeZQOrDven0G7BreJpHIrTmu90r6mCfwMz/LOVt0TkWCo74FyijFAOUCsx3hxStJzTkH0eQM2wdNynz1j0s9dtQwQoqE90dgUUfD869HF89q5nG3xtup/W/k1S+MIhL/4Zj2c5zDdDoXSQUaTklbwpWn/+u/xPNRSZ/NYqaCNFhhm8pIXm+Z/sBSU99bZg"
+              srcset="data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAAWBtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAADRpbG9jAAAAAERAAAIAAQAAAAABhAABAAAAAAAAAnsAAgAAAAAD/wABAAAAAAAAAOQAAAA4aWluZgAAAAAAAgAAABVpbmZlAgAAAAABAABhdjAxAAAAABVpbmZlAgAAAAACAABhdjAxAAAAAA5waXRtAAAAAAABAAAAn2lwcnAAAAB6aXBjbwAAAAxhdjFDgSACAAAAABRpc3BlAAAAAAAAADAAAAAwAAAADnBpeGkAAAAAAQgAAAAMYXYxQ4EAHAAAAAA4YXV4QwAAAAB1cm46bXBlZzptcGVnQjpjaWNwOnN5c3RlbXM6YXV4aWxpYXJ5OmFscGhhAAAAAB1pcG1hAAAAAAAAAAIAAQOBAgMAAgSEAgOFAAAAGmlyZWYAAAAAAAAADmF1eGwAAgABAAEAAANnbWRhdBIACgk4FW+9pAQ0GkAy6wQYgmMEEknIml0AACDdK/hPdc7rMT3ny+7g+2JKo05YjdQcC5wN/eiqtx2W6wWL90kYwytXymP/7DV6xwUEP8DKfqHsx76cfy2IUzFuSpes5rLn62QkMSfrqdDNtYCxRKbHfdYFcak7U7pyXrK98Myf81afYWvWVZpLpkTDfeSFcyf/OqE2KFFnMvmT+UKQM+wKZdxnJdDajXYeTu/5TgwCNtjZyUANrjvMFG5bgaYsl4FceFxiM+4LlFoLJ7J/S1erYxi2NOw4wpffBLGwt56k9STsBxExJiwWt7aftVvEYYTtIcCxp51ahl3Sl3l+hF3hahdrMd1564k4X4uoCImQiuKPVwn8LjrKQxFt4dO5nbSt4//m9OzOp66JaSkCvVtxn6IghanntKdjRiaAWWTOGINzbo8OMCzg9Aj4vuuemRNOVDallJTJ9iO6aXfeztcXLuWJyLnUe7OJmOxxDFQfRWUbggPZe/sy6dcDTz4metvTK2x4vjawylHScXjLoAL+dUQ8y/RAv+cXXNoJOG1PbHkL5AjHFhiAOv3s1SfdjQ848NpCa2wPVH1Jz2BoriO8/AqUigS35SsuBtfrsZUkrKyA3OWM3b+FZXG0Hip+fIJXjg0NH3B5Oe8adm7uizXHnfje7x+5ZK4YC8u7Tq7Jwo6q97ARNonXZuS/zHdy8amdUUwv6b6qX+3L1/1IuJMOIrp6wtJqKNLEIDtO9YvqhhPXWJCi01SCKd7FHN3VJktcMtCghs9cInG43DS+jSmbvQWl7UAlCFszLnXKe+GNaAyzdHrGBilxmBjPsaZ93N5CSCeifjOFKqBIEgAKBhgVb72FQDLXAUXAAABQ0oEWt/SZkCs7pRYTdf1GCszPVH9xdDFLhYBuT/t3j0PHcICxXaSKM6ZH7quzg2WM6oJAVeW0BTP0UM0LIZJKUa8kHTFeZQOrDven0G7BreJpHIrTmu90r6mCfwMz/LOVt0TkWCo74FyijFAOUCsx3hxStJzTkH0eQM2wdNynz1j0s9dtQwQoqE90dgUUfD869HF89q5nG3xtup/W/k1S+MIhL/4Zj2c5zDdDoXSQUaTklbwpWn/+u/xPNRSZ/NYqaCNFhhm8pIXm+Z/sBSU99bZg 1x, data:image/avif;base64,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 2x"
+              alt="Andrew Lee"
+              width="48"
+              height="48"
+            />
+            <span class="text-regular-semibold color-neutral-darkest"
+              >Andrew Lee</span
+            >
+          </figcaption>
+        </figure>
+      </li>
+      <li class="feedbacks__list-item">
+        <figure class="feedbacks__card">
+          <div class="feedbacks__rating" data-rating="2">
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star-fill" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star-fill"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star"></use>
+            </svg>
+            <svg class="feedbacks__star-icon star" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#star"></use>
+            </svg>
+          </div>
+
+          <blockquote>
+            <p class="feedbacks__text">
+              "Their eco-friendly packaging is a big plus for me. It's nice to
+              support a business that cares about the environment!"
+            </p>
+          </blockquote>
+
+          <figcaption class="feedbacks__author">
+            <img
+              class="feedbacks__avatar"
+              loading="lazy"
+              decoding="async"
+              src="data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAAWBtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAADRpbG9jAAAAAERAAAIAAQAAAAABhAABAAAAAAAAAq8AAgAAAAAEMwABAAAAAAAAAOQAAAA4aWluZgAAAAAAAgAAABVpbmZlAgAAAAABAABhdjAxAAAAABVpbmZlAgAAAAACAABhdjAxAAAAAA5waXRtAAAAAAABAAAAn2lwcnAAAAB6aXBjbwAAAAxhdjFDgSACAAAAABRpc3BlAAAAAAAAADAAAAAwAAAADnBpeGkAAAAAAQgAAAAMYXYxQ4EAHAAAAAA4YXV4QwAAAAB1cm46bXBlZzptcGVnQjpjaWNwOnN5c3RlbXM6YXV4aWxpYXJ5OmFscGhhAAAAAB1pcG1hAAAAAAAAAAIAAQOBAgMAAgSEAgOFAAAAGmlyZWYAAAAAAAAADmF1eGwAAgABAAEAAAObbWRhdBIACgk4FW+9pAQ0GkAynwUYgmMExJJVE0gAAATdSwhZ8tQLLyP4F/5ot9VMOEiXMW4U83HczT7pXkmxAEpGMtXPpSr1Jdu86Txu4RE911yZGjnnO2JnlE5pJXR0aGh4o/J9fSoZZi1LIiOd4ei7dtPikv/YXKIs6upTD8BjX/XdNoykApWMlWKTMBH6/m5tY5XKkhNEVA8pdGU+jJL3nRa6kJULaUEUCyc0yVlvosuPBYi7m+LaHU4dh2xCLUezAJY0LuL+t30NVOLxW9AX76ucQuX9RPESrCo7WixCxnf/23f2Q3ufqE6i6GqjYH1ixQF1v6nVjTqNcMeQNqFmkVKwIxwtj4uF7SNYt7G/7nx4cmdYq8p6lxFm+5BdNmZfzMJ6cPlBBOjrNkI7scyV1kc5yP3mzqzQFTOcLk9mAsFhu0mMMdXq0Nf+2aSqxjXO2iqV+hG07oea3wHHfUs8zFe9Jp1OdyE/ND5wFHgEnXIfEwnAYyr6iY5JNgXa3+NVkgf+V3U1v6IyPDhd5cmRCJKcB3oD6edzumao5sWZbfnmgzSeCJLwUwvMYJwLwi+jH5TrwCtZBRFQ5u9lAmaBLxQ/x5EKwDu4WgMaPbLiO7tcAWbFyNJN5XrkOEx10TCdXopHKbkIeIQsOse5JnWSPjADHahEmqW/+/eIICidRlWDQkiw4Iz1EOfqB/0TJXbKravCFNFNvMNISGCmmEMidDtYelzeEgfyQzgDFjHXSR+KLX0j748l3+5CqQovUxGVZIBi+VOha9RoQ0LRDBZ/wKksvD6VfaoQuOTY5k+sdtfAPLiO8lNPyALfczjNGPUGaaMZ3hfgyBqEQyV9bvR4z3m8LeNZs4CDTNgse3mCv1LQNUnaOHdvGb72gMegN3va83JEvJ+eODsDZLrONPNp4BIACgYYFW+9hUAy1wFFwAAAUNKBFrf0mZArO6UWE3X9RgrMz1R/cXQxS4WAbk/7d49Dx3CAsV2kijOmR+6rs4NljOqCQFXltAUz9FDNCyGSSlGvJB0xXmUDqw73p9Buwa3iaRyK05rvdK+pgn8DM/yzlbdE5FgqO+BcooxQDlArMd4cUrSc05B9HkDNsHTcp89Y9LPXbUMEKKhPdHYFFHw/OvRxfPauZxt8bbqf1v5NUvjCIS/+GY9nOcw3Q6F0kFGk5JW8KVp//rv8TzUUmfzWKmgjRYYZvKSF5vmf7AUlPfW2YA=="
+              srcset="data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAG1pZjFhdmlmbWlhZgAAAWBtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAADRpbG9jAAAAAERAAAIAAQAAAAABhAABAAAAAAAAAq8AAgAAAAAEMwABAAAAAAAAAOQAAAA4aWluZgAAAAAAAgAAABVpbmZlAgAAAAABAABhdjAxAAAAABVpbmZlAgAAAAACAABhdjAxAAAAAA5waXRtAAAAAAABAAAAn2lwcnAAAAB6aXBjbwAAAAxhdjFDgSACAAAAABRpc3BlAAAAAAAAADAAAAAwAAAADnBpeGkAAAAAAQgAAAAMYXYxQ4EAHAAAAAA4YXV4QwAAAAB1cm46bXBlZzptcGVnQjpjaWNwOnN5c3RlbXM6YXV4aWxpYXJ5OmFscGhhAAAAAB1pcG1hAAAAAAAAAAIAAQOBAgMAAgSEAgOFAAAAGmlyZWYAAAAAAAAADmF1eGwAAgABAAEAAAObbWRhdBIACgk4FW+9pAQ0GkAynwUYgmMExJJVE0gAAATdSwhZ8tQLLyP4F/5ot9VMOEiXMW4U83HczT7pXkmxAEpGMtXPpSr1Jdu86Txu4RE911yZGjnnO2JnlE5pJXR0aGh4o/J9fSoZZi1LIiOd4ei7dtPikv/YXKIs6upTD8BjX/XdNoykApWMlWKTMBH6/m5tY5XKkhNEVA8pdGU+jJL3nRa6kJULaUEUCyc0yVlvosuPBYi7m+LaHU4dh2xCLUezAJY0LuL+t30NVOLxW9AX76ucQuX9RPESrCo7WixCxnf/23f2Q3ufqE6i6GqjYH1ixQF1v6nVjTqNcMeQNqFmkVKwIxwtj4uF7SNYt7G/7nx4cmdYq8p6lxFm+5BdNmZfzMJ6cPlBBOjrNkI7scyV1kc5yP3mzqzQFTOcLk9mAsFhu0mMMdXq0Nf+2aSqxjXO2iqV+hG07oea3wHHfUs8zFe9Jp1OdyE/ND5wFHgEnXIfEwnAYyr6iY5JNgXa3+NVkgf+V3U1v6IyPDhd5cmRCJKcB3oD6edzumao5sWZbfnmgzSeCJLwUwvMYJwLwi+jH5TrwCtZBRFQ5u9lAmaBLxQ/x5EKwDu4WgMaPbLiO7tcAWbFyNJN5XrkOEx10TCdXopHKbkIeIQsOse5JnWSPjADHahEmqW/+/eIICidRlWDQkiw4Iz1EOfqB/0TJXbKravCFNFNvMNISGCmmEMidDtYelzeEgfyQzgDFjHXSR+KLX0j748l3+5CqQovUxGVZIBi+VOha9RoQ0LRDBZ/wKksvD6VfaoQuOTY5k+sdtfAPLiO8lNPyALfczjNGPUGaaMZ3hfgyBqEQyV9bvR4z3m8LeNZs4CDTNgse3mCv1LQNUnaOHdvGb72gMegN3va83JEvJ+eODsDZLrONPNp4BIACgYYFW+9hUAy1wFFwAAAUNKBFrf0mZArO6UWE3X9RgrMz1R/cXQxS4WAbk/7d49Dx3CAsV2kijOmR+6rs4NljOqCQFXltAUz9FDNCyGSSlGvJB0xXmUDqw73p9Buwa3iaRyK05rvdK+pgn8DM/yzlbdE5FgqO+BcooxQDlArMd4cUrSc05B9HkDNsHTcp89Y9LPXbUMEKKhPdHYFFHw/OvRxfPauZxt8bbqf1v5NUvjCIS/+GY9nOcw3Q6F0kFGk5JW8KVp//rv8TzUUmfzWKmgjRYYZvKSF5vmf7AUlPfW2YA== 1x, data:image/avif;base64,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 2x"
+              alt="Laura Kim"
+              width="48"
+              height="48"
+            />
+            <span class="text-regular-semibold color-neutral-darkest"
+              >Laura Kim</span
+            >
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+      <section class="section" id="faq">
+  <div class="container is-faq">
+    <div class="faq-title-wrapper">
+      <h2 class="text-size-lg margin-bottom-8">FAQs</h2>
+      <p class="width-a-362-362">
+        Here are some common questions about our organic products and services.
+      </p>
+    </div>
+
+    <ul class="faq-list">
+      <li class="faq-item active">
+        <h3>
+          <button type="button" class="faq-question text-medium-bold">
+            Are all products organic?
+            <svg class="faq-arrow" width="32" height="32">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#faq-arrow"></use>
+            </svg>
+          </button>
+        </h3>
+
+        <div class="faq-answer">
+          <p class="text-regular-normal">
+            Yes, all our products are certified organic. We prioritize quality
+            and sustainability in our sourcing. You can trust that everything
+            you buy from us meets strict organic standards.
+          </p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <h3>
+          <button type="button" class="faq-question text-medium-bold">
+            Where do you source?
+            <svg class="faq-arrow" width="32" height="32">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#faq-arrow"></use>
+            </svg>
+          </button>
+        </h3>
+
+        <div class="faq-answer">
+          <p class="text-regular-normal">
+            We source our products from local farmers and trusted suppliers.
+            This ensures freshness and supports our community. Our commitment is
+            to ethical and sustainable practices.
+          </p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <h3>
+          <button type="button" class="faq-question text-medium-bold">
+            What areas do you deliver?
+            <svg class="faq-arrow" width="32" height="32">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#faq-arrow"></use>
+            </svg>
+          </button>
+        </h3>
+        <div class="faq-answer">
+          <p class="text-regular-normal">
+            We currently deliver to several neighborhoods in the region. Check
+            our delivery area on the website for specifics. If you're unsure,
+            feel free to reach out!
+          </p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <h3>
+          <button type="button" class="faq-question text-medium-bold">
+            Do you offer subscriptions?
+            <svg class="faq-arrow" width="32" height="32">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#faq-arrow"></use>
+            </svg>
+          </button>
+        </h3>
+
+        <div class="faq-answer">
+          <p class="text-regular-normal">
+            Yes, we offer subscription plans for regular deliveries. This is a
+            convenient way to ensure you never run out of your favorite organic
+            products. You can customize your subscription based on your needs.
+          </p>
+        </div>
+      </li>
+
+      <li class="faq-item">
+        <h3>
+          <button type="button" class="faq-question text-medium-bold">
+            How can I contact?
+            <svg class="faq-arrow" width="32" height="32">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#faq-arrow"></use>
+            </svg>
+          </button>
+        </h3>
+
+        <div class="faq-answer">
+          <p class="text-regular-normal">
+            You can reach us via phone or email for any inquiries. Our customer
+            service team is here to help. We aim to respond to all questions
+            promptly.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+      <section class="section is-contacts" id="contacts">
+  <div class="container is-contacts">
+    <div class="form-field">
+      <p class="text-size-tagline">Contacts</p>
+      <h2 class="text-size-lg contacts-heading">Get in Touch</h2>
+      <p>We'd love to hear from you anytime!</p>
+      <ul class="contact-info-list">
+        <li>
+          <a class="contact-info" href="mailto:hello@organicstore.com">
+            <svg class="contact-icon" width="20" height="16">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#email"></use>
+            </svg>
+            <p class="text-regular-normal is-underlined">
+              hello@organicstore.com
+            </p>
+          </a>
+        </li>
+        <li>
+          <a class="contact-info" href="tel:+15553291024">
+            <svg class="contact-icon" width="20" height="20">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#phone"></use>
+            </svg>
+            <p class="text-regular-normal is-underlined">+1 (555) 329-1024</p>
+          </a>
+        </li>
+      </ul>
+      <form class="contact-form">
+        <label for="form-name" class="form-label">Name</label>
+        <div class="validation">
+          <input
+            class="form-input text-regular-normal"
+            type="text"
+            id="form-name"
+            name="name"
+            placeholder="Sarah"
+            pattern="^[a-zA-Z\s\.]{5,64}$"
+            autocomplete="off"
+            required
+          />
+          <p class="invalid-text">Error text</p>
+        </div>
+        <div class="validation">
+          <label for="form-email" class="form-label">Email</label>
+          <input
+            class="form-input text-regular-normal"
+            type="email"
+            id="form-email"
+            name="email"
+            placeholder="hello@organic.com"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+            autocomplete="off"
+            required
+          />
+          <p class="invalid-text">Error text</p>
+        </div>
+
+        <label for="form-message" class="form-label">Message</label>
+        <textarea
+          class="form-textarea text-regular-normal"
+          name="message"
+          id="form-message"
+          placeholder="Text your message..."
+          maxlength="500"
+        ></textarea>
+        <div class="btn-wrapper">
+          <button class="button" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <picture class="form-img">
+      <source
+        media="(min-width: 1440px)"
+        srcset="/html-css_130_Roman-Shostak/assets/form-d-DGLoixAi.avif 1x, /html-css_130_Roman-Shostak/assets/form-d@2x-LYZjGAYe.avif 2x"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="/html-css_130_Roman-Shostak/assets/form-t-BS45AMiZ.avif 1x, /html-css_130_Roman-Shostak/assets/form-t@2x-CRmiaC29.avif 2x"
+      />
+      <img
+        loading="lazy"
+        decoding="async"
+        src="/html-css_130_Roman-Shostak/assets/form-DQz-ckub.avif"
+        srcset="/html-css_130_Roman-Shostak/assets/form-DQz-ckub.avif 1x, /html-css_130_Roman-Shostak/assets/form@2x-Ci0FGl0j.avif 2x"
+        alt="Group of smiling people"
+        width="343"
+        height="343"
+      />
+    </picture>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container is-footer">
+    <div class="footer-top">
+      <a
+        class="logo-wrapper is-footer"
+        href="#home"
+        aria-label="Organic Shop home"
+      >
+        <svg class="logo is-footer" width="162" height="70">
+          <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="footer-navigation" aria-label="Footer navigation">
+        <ul class="footer-nav-list">
+          <li>
+            <a class="text-regular-normal is-footer" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="text-regular-normal is-footer" href="#mission">Mission</a>
+          </li>
+          <li>
+            <a class="text-regular-normal is-footer" href="#benefits"
+              >Benefits</a
+            >
+          </li>
+          <li>
+            <a class="text-regular-normal is-footer" href="#assortment"
+              >Assortment</a
+            >
+          </li>
+          <li>
+            <a class="text-regular-normal is-footer" href="#feedbacks"
+              >Feedbacks</a
+            >
+          </li>
+          <li>
+            <a class="text-regular-normal is-footer" href="#faq">FAQ</a>
+          </li>
+          <li>
+            <a class="text-regular-normal is-footer" href="#contacts"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer-social-list">
+        <li>
+          <a
+            class="footer-social-link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <svg class="footer-social-icon" width="32" height="32">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-social-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <svg class="footer-social-icon" width="32" height="32">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-social-link"
+            href="https://x.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X"
+          >
+            <svg class="footer-social-icon" width="32" height="32">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#x"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-social-link"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <svg class="footer-social-icon" width="32" height="32">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#linkedIn"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            class="footer-social-link"
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+          >
+            <svg class="footer-social-icon" width="32" height="32">
+              <use href="/html-css_130_Roman-Shostak/assets/sprite-DGgTcSnB.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p class="text-small-normal">
+        &copy; 2025 Organic Shop. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>
